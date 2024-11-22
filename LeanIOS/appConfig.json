@@ -29,7 +29,7 @@
     "forceSessionCookieExpiry": 0,
     "iosCustomHeaders": {},
     "androidCustomHeaders": {},
-    "version": 12
+    "version": 13
   },
   "navigation": {
     "tabNavigation": {
@@ -328,7 +328,7 @@
     "iosSidebarBackgroundColorDark": "#202020",
     "iosNavigationBarTintColor": "#f8f8f8",
     "iosNavigationBarTintColorDark": "#202020",
-    "iosTabBarTintColor": "#43ea05",
+    "iosTabBarTintColor": "#f8f8f7",
     "iosTabBarTintColorDark": "#f8f8f8",
     "icon": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
     "iosHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",

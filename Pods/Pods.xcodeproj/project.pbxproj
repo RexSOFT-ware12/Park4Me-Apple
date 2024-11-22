@@ -1,0 +1,2183 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0412DEF5B0065DDF6F89C12727DA5240 /* GoNativeCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 06585EDCFB3796C178631B93CE2F929C /* Build configuration list for PBXAggregateTarget "GoNativeCore" */;
+			buildPhases = (
+				E54CE520BF48FDF793375B81727629EC /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				EDD4B8BA10C3738011C0BD219472233B /* PBXTargetDependency */,
+			);
+			name = GoNativeCore;
+		};
+		210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C4BEDE8419E52BD08B0E6C875B5CD08A /* Build configuration list for PBXAggregateTarget "OneSignal" */;
+			buildPhases = (
+				2CC561DE65F0F66F6AE8852576B8C8B7 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = OneSignal;
+		};
+		9110A21A4290DBD3319BF0C6C75DA709 /* OneSignalPlugin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3B74A7EE9F4F05C31F8B9DD46E054CFD /* Build configuration list for PBXAggregateTarget "OneSignalPlugin" */;
+			buildPhases = (
+				397CE842547213F9828B12D742555AD7 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				062ECE3762B9E59B80EE38DEB430A174 /* PBXTargetDependency */,
+				09E91CAE603D1EA1006590BCDAA7344F /* PBXTargetDependency */,
+				7F094C87EEE35D06E5FA7C12A8512DDA /* PBXTargetDependency */,
+				098E52912561F72400EB1078EA3DAEFD /* PBXTargetDependency */,
+			);
+			name = OneSignalPlugin;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03588B938BECEEF89042E2C73159BEA2 /* mz_strm_wzaes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA235873AF7BFD2A58CD99C1309EB5D /* mz_strm_wzaes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		090CC8DB2713055B65F3693A67A9F0AF /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = 2723501EC5E68C2EC142B86B8C1D3D6A /* mz_zip_rw.c */; };
+		0B5D4A04EAC173158C8D238F0E7DB966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */; };
+		0F0C13AD4DAF662871D11E237EFF1C5E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BB8F23D5187D1A86F619EC25C3D1EA /* Font.swift */; };
+		1567206362BF074F1B55F70FBA33DEC2 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44A1B4A6B50FE4FBF2E8523D337F2631 /* FontAwesome6_Regular.ttf */; };
+		1A188B0071B5FE465CCF40BFFB0DEEAE /* Pods-ParkMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 613A2DEEB4802EFA5372C9DBE5B75110 /* Pods-ParkMe-dummy.m */; };
+		1A29F09609043023A01BF2FED5DBC5CC /* Pods-MedianIOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D84FFA6EF90F38000C2BA9C1FCF12B44 /* Pods-MedianIOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2447F98C827F2FE7082D6036FEC94BF5 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 261568FEF5850CEFC3E5E41DC9F4A459 /* FontAwesome6_Brands.ttf */; };
+		27293E7084BFE6AF873BB233419CFA2D /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 2164E9617FCD438E361941D324A67659 /* mz_strm_mem.c */; };
+		2D6FB8768A6B2798FC84316E93E457A3 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 630F8581C4146B611491839ED79B72F6 /* FontAwesome6_Solid.ttf */; };
+		352E63E404CED072E7F714C52FF93E49 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 37F518169E9492CED95A2FD407E9E9D4 /* mz_compat.c */; };
+		355FB88B336403E6C31F8FE5B946D586 /* Pods-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEC7138869C13511826F4F91963CEAE /* Pods-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3683A04365A59519AAB2F47C5FA6FA3C /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 35706A7BCA253BED73FD323B54F7F158 /* mz_os_posix.c */; };
+		374FECA22750A2F7F17CA125C25DB352 /* mz_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FC280D94B4B39BEAADEC13B3E0A778 /* mz_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3CBDAB1C9EB792999ED29F9FF7361DC9 /* GNOSPSubscriptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C940B17F0CE64047595F3977170C078D /* GNOSPSubscriptions.storyboard */; };
+		4569AD436BB87FA37A01C5C982F025A2 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED8574E3802C6C3703B20940779A4AF /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45918DBEE3CD50502FAEA9794ADDD003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */; };
+		4940BEF2C2ED6F1A786C9C4C70B371A1 /* FontAwesome6_Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B85B594A0DE1F8D99CC90DCE4FEE6F8 /* FontAwesome6_Thin.ttf */; };
+		49900106BEFC9C1BEB3E96558C0C4AE8 /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 505C77ED11A8CDE56DC21A3DB2988FBD /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B537D7EED02B9651AD870CABF49BABE /* MedianIcons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3FDFCC98E5E8E369349FEDB24528FA /* MedianIcons-dummy.m */; };
+		4C652DF3EC0F0F39B29287E72864FC11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */; };
+		4C8A5ADD06D2DFC9E7FA2A1CA9DD565A /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 65CBC2906A02A1AB349AC73C5DF3CE68 /* mz_strm_pkcrypt.c */; };
+		4E56BA148170B3A6E7FA6D312B06C784 /* mz_zip_rw.h in Headers */ = {isa = PBXBuildFile; fileRef = 7188BA02F522B3DB765D7E1B27B4D5A1 /* mz_zip_rw.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50C171D1890D70EED265FCE3C5240091 /* FontAwesome.json in Resources */ = {isa = PBXBuildFile; fileRef = 68F8E0A2BBEC0FBFB796C9FC5D6532A5 /* FontAwesome.json */; };
+		554D1B2642E5DC39FBFB2150079988E6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F768387FCD6F04095B540AD067E6534B /* PrivacyInfo.xcprivacy */; };
+		5AE8274362638FD006B41882BF55F387 /* UIImage+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3980FD8FC9170C9FAE24264684CAE5ED /* UIImage+Font.swift */; };
+		5C3453F2DD57FBB3E8CDA20B84FB62EB /* NSAttributedString+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FCCA0052E5C0E6A548C8C16F9C12FB /* NSAttributedString+Font.swift */; };
+		60E384ABEF99F5104C99DCB596E2BE95 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = A78259F708739B687A28C406826007BD /* mz_crypt.c */; };
+		638A2F8D3A9FED54A88C74417EF0CEAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */; };
+		6577A9EB1AED47B915B7F77C3F8BF335 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFAF5B92D80EABED17C9AA402F6D8B /* mz_os.c */; };
+		68D4A83EA695C463981E04DAD037064F /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = B12133C5629D9F20DB180F56AB47EC58 /* mz_strm_split.c */; };
+		7819DD27A1B62DFC933835DFAFBDBF42 /* mz.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9461A298425B5ED661B9F3247B0C34 /* mz.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CED75E1DD65AF51DB22F66F4263FBE8 /* Pods-ParkMe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61707A3EFA5DB8C2A5A21BA712BC2931 /* Pods-ParkMe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED6C3C05EA6EE83780A3600C7088B46 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B22C717366DFFD9E3C53F601C24E19 /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		817909CFA2E8032670693BF57A2D5519 /* mz_strm_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9444C0C5A8B1618E4A9456754FE325B7 /* mz_strm_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		823033F3DF2D5C7C4B123A277DB55073 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CB5D10C20D70512A135C565C8EF32 /* mz_strm.c */; };
+		835C687083E3D51DE87C2F2C4C681B1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C330BC62C9ACD3F9E7AF138812EF298C /* Security.framework */; };
+		8415E191A2886EC3426A01BC86299E1F /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 594E31837E48558F8C555545C2BB15D1 /* mz_strm_buf.c */; };
+		84B5FB65B38C19F534F49DE6471C0E5B /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CC76FD5BC7D28104EAE20AEE33F0B5B /* mz_strm_zlib.c */; };
+		8F43694404EAFF6D73EE58928154C0F2 /* mz_strm_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BF2D06C3FB285382841270566668C1 /* mz_strm_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		982E562468DAEA210F469728F0F0E537 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F841107B92772657A97813E51D32652A /* Utilities.swift */; };
+		A190A9DFC23558006BE5D8D5B6DAE51C /* mz_strm_zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 826FBE99F086D55F96ECF6CA3638D139 /* mz_strm_zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A71E222C76A20B18600A6DE4091CFB0E /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 239C5FA6BAE6B37B26F46017348F91A7 /* SSZipArchive.m */; };
+		A90260F860E51EC89130250EA3E61F22 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A8AFE6E4DBF52ADA4E0338833B6DBD /* SSZipArchive-dummy.m */; };
+		AAF2B7BD4C56295DBA1BB6039AC0EDD4 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 714B8CDDF7152CD7CC0BBC7C30F123F4 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD3334681B057E7FAEB50F6C79347164 /* FontAwesome6_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D883E4D6597BB9744A523156071E0A52 /* FontAwesome6_Light.ttf */; };
+		AE0F1284A9C414203C1D5C66EDE95E8E /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F96F6694BF6077CFF9A4689B3B75BB1 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFD8B726A2DA73578AA71D66645E6AD1 /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E91421C610B40426F268AA02DE15C /* Pods-OneSignalNotificationServiceExtension-dummy.m */; };
+		B0994B99658439DACF267379BB9B5B87 /* Pods-MedianIOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F919CA4BC0CC25C8BAE3614838920491 /* Pods-MedianIOSTests-dummy.m */; };
+		B4DF1CDCE2413AF579E102954A4033F6 /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 628E833AAF4D2FDBFFD8700E4882E946 /* mz_strm_os_posix.c */; };
+		BE9F1461F54BCB68FCA4EC42572F2D0A /* FontFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506AD00B299E31AD64FD8FBD18A21B7 /* FontFactory.swift */; };
+		C53D326186927C0C85580CC5FEB133E3 /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1697D58D531CDD52DC5F9545A6BA94 /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C64C28E8B15C171323473E543C608E68 /* mz_strm_os.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8257138F7DB3B2A27DEFFAC6561C9E /* mz_strm_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9AFC6682FD2C8231E779A4349DBDFD6 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = CA05FF7B433F08A2E04D658D23EA3952 /* mz_strm_wzaes.c */; };
+		D077148F7C355824C44ECBFAC5D50323 /* MaterialDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8FEDADFD06E5D0E6A34F314EDF98A /* MaterialDesign.json */; };
+		D201CC4FCEA9AA889C5158ADFFEE9829 /* polyfill.js in Resources */ = {isa = PBXBuildFile; fileRef = CF5E463E28570B6CBE915D9AFD3EDA5E /* polyfill.js */; };
+		D2E6ED217227452C59C9B29C62858F7C /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19562CE9DE0EF71D44965460E7CFC2F0 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9C15A8B92E62396D95DB88415A38A8F /* mz_strm_split.h in Headers */ = {isa = PBXBuildFile; fileRef = 484A0A842EADEDC09400CB76F9CE073C /* mz_strm_split.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE5FDBDD5D7E1CD682CB14A90D07961D /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFA04F5EAD50C947EC5A2D69603FEC /* FontLoader.swift */; };
+		E283D8FF283E09D9CF863A27B55886EF /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = 66D4A243CC3138F2FC93FB0458D1180A /* mz_crypt_apple.c */; };
+		E4482CD4C4A4EEBEE27D535EB5A2EC04 /* MaterialDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D56A5E71A59B1349C65E81D88F0CB /* MaterialDesign.ttf */; };
+		E5FA0235CD286C13C0F568946EB0AEA8 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 6304DCC16C9B7003A1393A84488130BF /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8AB8A25209B21B7D1E61138E4C88E1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */; };
+		F16CA13AB620DDBD6A2B833A04189345 /* MedianIcons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23022B44BBB2E0DE2AD371686A677669 /* MedianIcons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBF481A2EC25D99DC41914AE7B9754D2 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 457E1C0A1D124E73491BBA5DE2179EDD /* mz_zip.c */; };
+		FF500FD55C6C8DD8418FA2290B95811A /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = F24E864770ACF6843A4EC9FBCE62949A /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04444ECE2B0EFA5CA0E26430241DE0A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 625C97BB2B6D7ADBAC1EAE3F2940D574;
+			remoteInfo = "OneSignalPlugin-OneSignalPluginJS";
+		};
+		1734D07E0B1B054332D319034D1D77CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9110A21A4290DBD3319BF0C6C75DA709;
+			remoteInfo = OneSignalPlugin;
+		};
+		2D0349D7225139D8C4854E0AFF2AF6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0412DEF5B0065DDF6F89C12727DA5240;
+			remoteInfo = GoNativeCore;
+		};
+		455B86FAB6978A51B5AB7BF74516D071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D9E1CFE057ACA78611354A64E68592;
+			remoteInfo = MedianIcons;
+		};
+		4D2C8ACD08D6A4C48C78B2E1C73759BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E02A99A718A18CDF4B8740B94BD852;
+			remoteInfo = "Pods-ParkMe";
+		};
+		56CEDAE4A8C1F0BB68192E8582840A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
+			remoteInfo = SSZipArchive;
+		};
+		913923D5D8ECD41F29E128E5CA5F046A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0412DEF5B0065DDF6F89C12727DA5240;
+			remoteInfo = GoNativeCore;
+		};
+		DBF0E123F326A45E3FDE03A998B41C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0AD6074FE4E456D37BE6BD69B9B551;
+			remoteInfo = "OneSignalPlugin-OneSignalResources";
+		};
+		E0401ED4BBB2FE9AC868E03C3EC7FE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342DC4BCB960507542891730A007EEC5;
+			remoteInfo = "GoNativeCore-GoNativeCore_Privacy";
+		};
+		F44A0850815BE50AF554E9356BC9F4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
+		F9FB37ECDD5EA4DDFB7A5AA19B1B296B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
+		FF35000A21092FED4EF7CDD54AD3BB93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210EB05CEC7AD9C148F90F752DE74C48;
+			remoteInfo = OneSignal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A1F8B792405302E1F730FAF64B6B46 /* Pods-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
+		042E9CDA495F15730DF31A7E6F1F07BC /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		046840E34D88A66E342F5597891A8D6C /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09BB8F23D5187D1A86F619EC25C3D1EA /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = MedianIcons/Classes/Font.swift; sourceTree = "<group>"; };
+		100CADA574E0105EE32FCE22E03E104B /* GoNativeCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoNativeCore.xcframework; path = XCFramework/GoNativeCore.xcframework; sourceTree = "<group>"; };
+		106C0B38E84C26644E67D25E97D764F3 /* ResourceBundle-OneSignalPluginJS-OneSignalPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OneSignalPluginJS-OneSignalPlugin-Info.plist"; sourceTree = "<group>"; };
+		10B4148D345912B3D4AF49BDE2D0BAF7 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		13860ACEC142093517095A45FB95EB11 /* MedianIcons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MedianIcons-prefix.pch"; sourceTree = "<group>"; };
+		18FC280D94B4B39BEAADEC13B3E0A778 /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
+		19562CE9DE0EF71D44965460E7CFC2F0 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		19A9FA9B6A0AE6E220340C69D9091197 /* GoNativeCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoNativeCore.debug.xcconfig; sourceTree = "<group>"; };
+		1B85B594A0DE1F8D99CC90DCE4FEE6F8 /* FontAwesome6_Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome6_Thin.ttf; path = MedianIcons/Assets/FontAwesome6_Thin.ttf; sourceTree = "<group>"; };
+		1ED8574E3802C6C3703B20940779A4AF /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		208A9A51E6B12AA8021F624AD7566737 /* Pods-MedianIOSTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MedianIOSTests"; path = Pods_MedianIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2164E9617FCD438E361941D324A67659 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
+		23022B44BBB2E0DE2AD371686A677669 /* MedianIcons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MedianIcons-umbrella.h"; sourceTree = "<group>"; };
+		239C5FA6BAE6B37B26F46017348F91A7 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		25B89E860A1C623D5FE8397EEA313E70 /* MedianIcons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MedianIcons-Info.plist"; sourceTree = "<group>"; };
+		261568FEF5850CEFC3E5E41DC9F4A459 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome6_Brands.ttf; path = MedianIcons/Assets/FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		2723501EC5E68C2EC142B86B8C1D3D6A /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
+		2CC76FD5BC7D28104EAE20AEE33F0B5B /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
+		2EA1D5FCB7EFFE2157FC4945D51094FC /* Pods-MedianIOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedianIOSTests-Info.plist"; sourceTree = "<group>"; };
+		2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		353B91D65D1994C379F7D15E93AD3776 /* Pods-MedianIOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MedianIOSTests.modulemap"; sourceTree = "<group>"; };
+		35706A7BCA253BED73FD323B54F7F158 /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
+		37B22C717366DFFD9E3C53F601C24E19 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
+		37F518169E9492CED95A2FD407E9E9D4 /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
+		3980FD8FC9170C9FAE24264684CAE5ED /* UIImage+Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Font.swift"; path = "MedianIcons/Classes/UIImage+Font.swift"; sourceTree = "<group>"; };
+		39A93385A10FCD9A36FF6DD42634F7A4 /* GoNativeCore-GoNativeCore_Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GoNativeCore-GoNativeCore_Privacy"; path = GoNativeCore_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F96F6694BF6077CFF9A4689B3B75BB1 /* mz_strm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = SSZipArchive/minizip/mz_strm.h; sourceTree = "<group>"; };
+		44A1B4A6B50FE4FBF2E8523D337F2631 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome6_Regular.ttf; path = MedianIcons/Assets/FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		457E1C0A1D124E73491BBA5DE2179EDD /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
+		4691EA7E72C7989F89FFAE57A8AEA81D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		484A0A842EADEDC09400CB76F9CE073C /* mz_strm_split.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = SSZipArchive/minizip/mz_strm_split.h; sourceTree = "<group>"; };
+		49FCCA0052E5C0E6A548C8C16F9C12FB /* NSAttributedString+Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Font.swift"; path = "MedianIcons/Classes/NSAttributedString+Font.swift"; sourceTree = "<group>"; };
+		4AF3B972C94DFF11700E306F18F01DF3 /* Pods-OneSignalNotificationServiceExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OneSignalNotificationServiceExtension"; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA178D40B3583453B95DC1A7D5D503F /* OneSignalOutcomes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OneSignalOutcomes.xcframework; path = iOS_SDK/OneSignalSDK/OneSignal_Outcomes/OneSignalOutcomes.xcframework; sourceTree = "<group>"; };
+		4DCFAF5B92D80EABED17C9AA402F6D8B /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
+		505C77ED11A8CDE56DC21A3DB2988FBD /* mz_zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = SSZipArchive/minizip/mz_zip.h; sourceTree = "<group>"; };
+		5218CC39EB7D9E6D2BD31B0743FDFFCB /* Pods-MedianIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedianIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5415DC6A546BFCDAEA2854623C8E3E6D /* MedianIcons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MedianIcons.modulemap; sourceTree = "<group>"; };
+		594E31837E48558F8C555545C2BB15D1 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
+		59B6517195D9F2D90BADE2A86D5F51EC /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		5E551403CEF44638DEC35AC8D4164E05 /* Pods-ParkMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkMe.release.xcconfig"; sourceTree = "<group>"; };
+		5FA235873AF7BFD2A58CD99C1309EB5D /* mz_strm_wzaes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_wzaes.h; path = SSZipArchive/minizip/mz_strm_wzaes.h; sourceTree = "<group>"; };
+		5FFA5F628B1486F57D31E9199973289B /* Pods-ParkMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkMe.debug.xcconfig"; sourceTree = "<group>"; };
+		60308765B6F00966E8B4EFC99FABBE00 /* Pods-OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		613A2DEEB4802EFA5372C9DBE5B75110 /* Pods-ParkMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkMe-dummy.m"; sourceTree = "<group>"; };
+		61707A3EFA5DB8C2A5A21BA712BC2931 /* Pods-ParkMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkMe-umbrella.h"; sourceTree = "<group>"; };
+		628E833AAF4D2FDBFFD8700E4882E946 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
+		6304DCC16C9B7003A1393A84488130BF /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
+		630F8581C4146B611491839ED79B72F6 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome6_Solid.ttf; path = MedianIcons/Assets/FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		6415E05D7D1B43FBE6886CA37097D3C8 /* Pods-ParkMe */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ParkMe"; path = Pods_ParkMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CBC2906A02A1AB349AC73C5DF3CE68 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		66D4A243CC3138F2FC93FB0458D1180A /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
+		68E8C7640BB623E04A2151633FB89E7A /* Pods-MedianIOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedianIOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68F8E0A2BBEC0FBFB796C9FC5D6532A5 /* FontAwesome.json */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.json; path = MedianIcons/Assets/FontAwesome.json; sourceTree = "<group>"; };
+		69636BBE821DCA300266103E9EDF4AA2 /* OneSignalCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OneSignalCore.xcframework; path = iOS_SDK/OneSignalSDK/OneSignal_Core/OneSignalCore.xcframework; sourceTree = "<group>"; };
+		6D2CB5D10C20D70512A135C565C8EF32 /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
+		714B8CDDF7152CD7CC0BBC7C30F123F4 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/include/ZipArchive.h; sourceTree = "<group>"; };
+		7188BA02F522B3DB765D7E1B27B4D5A1 /* mz_zip_rw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = SSZipArchive/minizip/mz_zip_rw.h; sourceTree = "<group>"; };
+		78205123D9076C87414D04DF8BD56AD2 /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
+		7AC8FEDADFD06E5D0E6A34F314EDF98A /* MaterialDesign.json */ = {isa = PBXFileReference; includeInIndex = 1; name = MaterialDesign.json; path = MedianIcons/Assets/MaterialDesign.json; sourceTree = "<group>"; };
+		7B42FC7DB0AEC3483FFE2B205C2EB246 /* OneSignal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.release.xcconfig; sourceTree = "<group>"; };
+		7B83E27B7DF9FFB8780EB40485679EBB /* GoNativeCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoNativeCore.release.xcconfig; sourceTree = "<group>"; };
+		826FBE99F086D55F96ECF6CA3638D139 /* mz_strm_zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_zlib.h; path = SSZipArchive/minizip/mz_strm_zlib.h; sourceTree = "<group>"; };
+		8A5D56A5E71A59B1349C65E81D88F0CB /* MaterialDesign.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = MaterialDesign.ttf; path = MedianIcons/Assets/MaterialDesign.ttf; sourceTree = "<group>"; };
+		908D28C3D64B01833E55F255ACAB67B8 /* Pods-MedianIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedianIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9444C0C5A8B1618E4A9456754FE325B7 /* mz_strm_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = SSZipArchive/minizip/mz_strm_mem.h; sourceTree = "<group>"; };
+		96D6C5379EF6D81833E48FAE1BD4EC5A /* Pods-ParkMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkMe-resources.sh"; sourceTree = "<group>"; };
+		9CEC7138869C13511826F4F91963CEAE /* Pods-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1F3C93E84F945A2FD78EB42FA758037 /* ResourceBundle-OneSignalResources-OneSignalPlugin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OneSignalResources-OneSignalPlugin-Info.plist"; sourceTree = "<group>"; };
+		A3812130474EE5F32632E242CF921BF2 /* Pods-ParkMe-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkMe-Info.plist"; sourceTree = "<group>"; };
+		A52440F6F2951FA61040F8323E8625D7 /* GoNativeCore-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoNativeCore-xcframeworks.sh"; sourceTree = "<group>"; };
+		A78259F708739B687A28C406826007BD /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
+		AB9B7850E4042A761DB26A95E00F3DD3 /* SSZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSZipArchive-Info.plist"; sourceTree = "<group>"; };
+		B10E91421C610B40426F268AA02DE15C /* Pods-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		B12133C5629D9F20DB180F56AB47EC58 /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
+		B1691D2ADBF4EDE9A138B606AD1054E0 /* ResourceBundle-GoNativeCore_Privacy-GoNativeCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoNativeCore_Privacy-GoNativeCore-Info.plist"; sourceTree = "<group>"; };
+		B311B79BA25F5722E4AD85185207EAA3 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		B69046C54DBE1B269C77D40A07715813 /* Pods-ParkMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkMe-acknowledgements.plist"; sourceTree = "<group>"; };
+		B6D373EF12091244904560A5A7CB9B76 /* MedianIcons */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MedianIcons; path = MedianIcons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1697D58D531CDD52DC5F9545A6BA94 /* mz_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = SSZipArchive/minizip/mz_os.h; sourceTree = "<group>"; };
+		C330BC62C9ACD3F9E7AF138812EF298C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C3BF2D06C3FB285382841270566668C1 /* mz_strm_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_buf.h; path = SSZipArchive/minizip/mz_strm_buf.h; sourceTree = "<group>"; };
+		C4B090CE04290E938532B773413C98F6 /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
+		C506AD00B299E31AD64FD8FBD18A21B7 /* FontFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontFactory.swift; path = MedianIcons/Classes/FontFactory.swift; sourceTree = "<group>"; };
+		C63CE64A90DA4A319CB66883AE3A011E /* Pods-MedianIOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedianIOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C928320C819C52BD824B16F21367576C /* OneSignalPlugin.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OneSignalPlugin.xcframework; path = XCFramework/OneSignalPlugin.xcframework; sourceTree = "<group>"; };
+		C940B17F0CE64047595F3977170C078D /* GNOSPSubscriptions.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = GNOSPSubscriptions.storyboard; path = resources/GNOSPSubscriptions.storyboard; sourceTree = "<group>"; };
+		CA05FF7B433F08A2E04D658D23EA3952 /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
+		CB32C618A49283A610B48DA96A21D447 /* OneSignal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignal.debug.xcconfig; sourceTree = "<group>"; };
+		CF1BEC6D0226FC3F97FDF489F2B5A3D5 /* OneSignalPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignalPlugin.release.xcconfig; sourceTree = "<group>"; };
+		CF5E463E28570B6CBE915D9AFD3EDA5E /* polyfill.js */ = {isa = PBXFileReference; includeInIndex = 1; name = polyfill.js; path = js/polyfill.js; sourceTree = "<group>"; };
+		CFAE6E43DAD84504303B41E794462ED4 /* OneSignalPlugin-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OneSignalPlugin-xcframeworks.sh"; sourceTree = "<group>"; };
+		D24F32514C92A54F03CFF151151B0711 /* OneSignalPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OneSignalPlugin.debug.xcconfig; sourceTree = "<group>"; };
+		D4140B4B28537071001065DFEF385CA7 /* OneSignal.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OneSignal.xcframework; path = iOS_SDK/OneSignalSDK/OneSignal_XCFramework/OneSignal.xcframework; sourceTree = "<group>"; };
+		D58F7BDD0DA5E0924742E2828F2885A8 /* Pods-ParkMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkMe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D6EDAD3F47DE2636181239773DD9062F /* OneSignal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OneSignal-xcframeworks.sh"; sourceTree = "<group>"; };
+		D84FFA6EF90F38000C2BA9C1FCF12B44 /* Pods-MedianIOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedianIOSTests-umbrella.h"; sourceTree = "<group>"; };
+		D883E4D6597BB9744A523156071E0A52 /* FontAwesome6_Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome6_Light.ttf; path = MedianIcons/Assets/FontAwesome6_Light.ttf; sourceTree = "<group>"; };
+		D98C26968876B0D34DECF8F3A9641BF8 /* OneSignalExtension.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OneSignalExtension.xcframework; path = iOS_SDK/OneSignalSDK/OneSignal_Extension/OneSignalExtension.xcframework; sourceTree = "<group>"; };
+		DAFFA04F5EAD50C947EC5A2D69603FEC /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontLoader.swift; path = MedianIcons/Classes/FontLoader.swift; sourceTree = "<group>"; };
+		E134DFE4127ADFDB89B4C754209084E6 /* MedianIcons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MedianIcons.debug.xcconfig; sourceTree = "<group>"; };
+		E240B0950845257DD162EDED2A540D65 /* Pods-ParkMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParkMe.modulemap"; sourceTree = "<group>"; };
+		EDDDC00B09928348AB84EC9BFCBEB8F9 /* MedianIcons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MedianIcons.release.xcconfig; sourceTree = "<group>"; };
+		EF8257138F7DB3B2A27DEFFAC6561C9E /* mz_strm_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_os.h; path = SSZipArchive/minizip/mz_strm_os.h; sourceTree = "<group>"; };
+		F1A8AFE6E4DBF52ADA4E0338833B6DBD /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		F24E864770ACF6843A4EC9FBCE62949A /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		F3E5D15D4FA4C59CE92FCD5D72178119 /* OneSignalPlugin-OneSignalResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OneSignalPlugin-OneSignalResources"; path = OneSignalResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F768387FCD6F04095B540AD067E6534B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = GoNativeCore/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F841107B92772657A97813E51D32652A /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = MedianIcons/Classes/Utilities.swift; sourceTree = "<group>"; };
+		F919CA4BC0CC25C8BAE3614838920491 /* Pods-MedianIOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedianIOSTests-dummy.m"; sourceTree = "<group>"; };
+		FA10D85EA832E48D3192EA3C80A436EB /* Pods-ParkMe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkMe-frameworks.sh"; sourceTree = "<group>"; };
+		FB3FDFCC98E5E8E369349FEDB24528FA /* MedianIcons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MedianIcons-dummy.m"; sourceTree = "<group>"; };
+		FD9461A298425B5ED661B9F3247B0C34 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
+		FF5EED788601F4EA7B145075E9FE9970 /* OneSignalPlugin-OneSignalPluginJS */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OneSignalPlugin-OneSignalPluginJS"; path = OneSignalPluginJS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD1D41BA2C6695DBB29F7B84F326978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FE6E4A7402C630F698F309A5C59FD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5D4A04EAC173158C8D238F0E7DB966 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D6F1C11B8B25778B206D1CE4C7BCDA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45918DBEE3CD50502FAEA9794ADDD003 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69381C46A8DECE5CA3D017C0AFCC1B16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B7CCC4D3C186BB73A6D1F0A0DCB559D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C652DF3EC0F0F39B29287E72864FC11 /* Foundation.framework in Frameworks */,
+				835C687083E3D51DE87C2F2C4C681B1C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537ED8A30D285137D4A8A2071FBEE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AB8A25209B21B7D1E61138E4C88E1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D7653B61593915482943BD45BC8CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638A2F8D3A9FED54A88C74417EF0CEAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C658789070279002964BCEF5D8FCAC91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0526889D7E4F4316BE3F936AE51CC3BA /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				FD9461A298425B5ED661B9F3247B0C34 /* mz.h */,
+				37F518169E9492CED95A2FD407E9E9D4 /* mz_compat.c */,
+				18FC280D94B4B39BEAADEC13B3E0A778 /* mz_compat.h */,
+				A78259F708739B687A28C406826007BD /* mz_crypt.c */,
+				37B22C717366DFFD9E3C53F601C24E19 /* mz_crypt.h */,
+				66D4A243CC3138F2FC93FB0458D1180A /* mz_crypt_apple.c */,
+				4DCFAF5B92D80EABED17C9AA402F6D8B /* mz_os.c */,
+				BF1697D58D531CDD52DC5F9545A6BA94 /* mz_os.h */,
+				35706A7BCA253BED73FD323B54F7F158 /* mz_os_posix.c */,
+				6D2CB5D10C20D70512A135C565C8EF32 /* mz_strm.c */,
+				3F96F6694BF6077CFF9A4689B3B75BB1 /* mz_strm.h */,
+				594E31837E48558F8C555545C2BB15D1 /* mz_strm_buf.c */,
+				C3BF2D06C3FB285382841270566668C1 /* mz_strm_buf.h */,
+				2164E9617FCD438E361941D324A67659 /* mz_strm_mem.c */,
+				9444C0C5A8B1618E4A9456754FE325B7 /* mz_strm_mem.h */,
+				EF8257138F7DB3B2A27DEFFAC6561C9E /* mz_strm_os.h */,
+				628E833AAF4D2FDBFFD8700E4882E946 /* mz_strm_os_posix.c */,
+				65CBC2906A02A1AB349AC73C5DF3CE68 /* mz_strm_pkcrypt.c */,
+				6304DCC16C9B7003A1393A84488130BF /* mz_strm_pkcrypt.h */,
+				B12133C5629D9F20DB180F56AB47EC58 /* mz_strm_split.c */,
+				484A0A842EADEDC09400CB76F9CE073C /* mz_strm_split.h */,
+				CA05FF7B433F08A2E04D658D23EA3952 /* mz_strm_wzaes.c */,
+				5FA235873AF7BFD2A58CD99C1309EB5D /* mz_strm_wzaes.h */,
+				2CC76FD5BC7D28104EAE20AEE33F0B5B /* mz_strm_zlib.c */,
+				826FBE99F086D55F96ECF6CA3638D139 /* mz_strm_zlib.h */,
+				457E1C0A1D124E73491BBA5DE2179EDD /* mz_zip.c */,
+				505C77ED11A8CDE56DC21A3DB2988FBD /* mz_zip.h */,
+				2723501EC5E68C2EC142B86B8C1D3D6A /* mz_zip_rw.c */,
+				7188BA02F522B3DB765D7E1B27B4D5A1 /* mz_zip_rw.h */,
+				1ED8574E3802C6C3703B20940779A4AF /* SSZipArchive.h */,
+				239C5FA6BAE6B37B26F46017348F91A7 /* SSZipArchive.m */,
+				F24E864770ACF6843A4EC9FBCE62949A /* SSZipCommon.h */,
+				714B8CDDF7152CD7CC0BBC7C30F123F4 /* ZipArchive.h */,
+				1A40D2F0179C95FEBF0924D1CECF63AF /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		05DF64059A7DB5431F3BD5FEABFAFEB7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5415DC6A546BFCDAEA2854623C8E3E6D /* MedianIcons.modulemap */,
+				FB3FDFCC98E5E8E369349FEDB24528FA /* MedianIcons-dummy.m */,
+				25B89E860A1C623D5FE8397EEA313E70 /* MedianIcons-Info.plist */,
+				13860ACEC142093517095A45FB95EB11 /* MedianIcons-prefix.pch */,
+				23022B44BBB2E0DE2AD371686A677669 /* MedianIcons-umbrella.h */,
+				E134DFE4127ADFDB89B4C754209084E6 /* MedianIcons.debug.xcconfig */,
+				EDDDC00B09928348AB84EC9BFCBEB8F9 /* MedianIcons.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MedianIcons";
+			sourceTree = "<group>";
+		};
+		1176A3507542E368FE048F8E835CF374 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F768387FCD6F04095B540AD067E6534B /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F3906880344F426015F35B4FA31944D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		175B09DFB9D1DCE26A03076C3B4259F4 /* MedianIcons */ = {
+			isa = PBXGroup;
+			children = (
+				09BB8F23D5187D1A86F619EC25C3D1EA /* Font.swift */,
+				C506AD00B299E31AD64FD8FBD18A21B7 /* FontFactory.swift */,
+				DAFFA04F5EAD50C947EC5A2D69603FEC /* FontLoader.swift */,
+				49FCCA0052E5C0E6A548C8C16F9C12FB /* NSAttributedString+Font.swift */,
+				3980FD8FC9170C9FAE24264684CAE5ED /* UIImage+Font.swift */,
+				F841107B92772657A97813E51D32652A /* Utilities.swift */,
+				FB9C22EEF1532C02BD0BA5E568E00C09 /* Resources */,
+				05DF64059A7DB5431F3BD5FEABFAFEB7 /* Support Files */,
+			);
+			name = MedianIcons;
+			path = MedianIcons;
+			sourceTree = "<group>";
+		};
+		17AB3664A08BC30B056D8AFDF828FE56 /* OneSignalPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				96E77AC356694273E9A9634C01A4A17F /* Binary */,
+				C79A5A3EFB4E86089966BD897EC8C1CC /* Support Files */,
+			);
+			name = OneSignalPlugin;
+			path = OneSignalPlugin;
+			sourceTree = "<group>";
+		};
+		1A40D2F0179C95FEBF0924D1CECF63AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				042E9CDA495F15730DF31A7E6F1F07BC /* SSZipArchive.modulemap */,
+				F1A8AFE6E4DBF52ADA4E0338833B6DBD /* SSZipArchive-dummy.m */,
+				AB9B7850E4042A761DB26A95E00F3DD3 /* SSZipArchive-Info.plist */,
+				B311B79BA25F5722E4AD85185207EAA3 /* SSZipArchive-prefix.pch */,
+				19562CE9DE0EF71D44965460E7CFC2F0 /* SSZipArchive-umbrella.h */,
+				C4B090CE04290E938532B773413C98F6 /* SSZipArchive.debug.xcconfig */,
+				78205123D9076C87414D04DF8BD56AD2 /* SSZipArchive.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		1C10511F809710108F61652D9D894E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C928320C819C52BD824B16F21367576C /* OneSignalPlugin.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29BF37FE1D86967F3C16B301EA3B74EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4140B4B28537071001065DFEF385CA7 /* OneSignal.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38791D4E60C16DF3E38F4700B0396B4E /* OneSignalCore */ = {
+			isa = PBXGroup;
+			children = (
+				46F810E0473580905E5639300A057C49 /* Frameworks */,
+			);
+			name = OneSignalCore;
+			sourceTree = "<group>";
+		};
+		3B37AF68AE7812BFB734668E96FB5CBA /* GoNativeCore */ = {
+			isa = PBXGroup;
+			children = (
+				3D0293723E83D059C0CC896E433A9F22 /* Binary */,
+				1176A3507542E368FE048F8E835CF374 /* Resources */,
+				A9433BFB873F1C9C8A67B1D0B5AD10CC /* Support Files */,
+			);
+			name = GoNativeCore;
+			path = GoNativeCore;
+			sourceTree = "<group>";
+		};
+		3D0293723E83D059C0CC896E433A9F22 /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				E615CF55D0805214E99BB28ADB584C7C /* Frameworks */,
+			);
+			name = Binary;
+			sourceTree = "<group>";
+		};
+		41CBBCD293667867F2C22B8464F904F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B37AF68AE7812BFB734668E96FB5CBA /* GoNativeCore */,
+				175B09DFB9D1DCE26A03076C3B4259F4 /* MedianIcons */,
+				A5802790EBA107DB013E238974C319E1 /* OneSignal */,
+				17AB3664A08BC30B056D8AFDF828FE56 /* OneSignalPlugin */,
+				0526889D7E4F4316BE3F936AE51CC3BA /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46F810E0473580905E5639300A057C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69636BBE821DCA300266103E9EDF4AA2 /* OneSignalCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F56EE7CA7982749FD82F97AECC3632A /* OneSignalExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CF0C2179F63CC39773905E979FAAF0C3 /* Frameworks */,
+			);
+			name = OneSignalExtension;
+			sourceTree = "<group>";
+		};
+		6B3A8C24A84832090A27E4192AD0383A /* OneSignalOutcomes */ = {
+			isa = PBXGroup;
+			children = (
+				790F6E7AD202CE4F6034DBFB59C1AF5C /* Frameworks */,
+			);
+			name = OneSignalOutcomes;
+			sourceTree = "<group>";
+		};
+		6CB8579A1E65FCA83E1BDEDBFCDA9764 /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				00A1F8B792405302E1F730FAF64B6B46 /* Pods-OneSignalNotificationServiceExtension.modulemap */,
+				046840E34D88A66E342F5597891A8D6C /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
+				10B4148D345912B3D4AF49BDE2D0BAF7 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */,
+				B10E91421C610B40426F268AA02DE15C /* Pods-OneSignalNotificationServiceExtension-dummy.m */,
+				60308765B6F00966E8B4EFC99FABBE00 /* Pods-OneSignalNotificationServiceExtension-Info.plist */,
+				9CEC7138869C13511826F4F91963CEAE /* Pods-OneSignalNotificationServiceExtension-umbrella.h */,
+				59B6517195D9F2D90BADE2A86D5F51EC /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				4691EA7E72C7989F89FFAE57A8AEA81D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			path = "Target Support Files/Pods-OneSignalNotificationServiceExtension";
+			sourceTree = "<group>";
+		};
+		6F3906880344F426015F35B4FA31944D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2F29E5F7EEDB83D0B063DAD0B5196072 /* Foundation.framework */,
+				C330BC62C9ACD3F9E7AF138812EF298C /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7802790A48BE285DE6C189EE64C95FEA /* Pods-ParkMe */ = {
+			isa = PBXGroup;
+			children = (
+				E240B0950845257DD162EDED2A540D65 /* Pods-ParkMe.modulemap */,
+				D58F7BDD0DA5E0924742E2828F2885A8 /* Pods-ParkMe-acknowledgements.markdown */,
+				B69046C54DBE1B269C77D40A07715813 /* Pods-ParkMe-acknowledgements.plist */,
+				613A2DEEB4802EFA5372C9DBE5B75110 /* Pods-ParkMe-dummy.m */,
+				FA10D85EA832E48D3192EA3C80A436EB /* Pods-ParkMe-frameworks.sh */,
+				A3812130474EE5F32632E242CF921BF2 /* Pods-ParkMe-Info.plist */,
+				96D6C5379EF6D81833E48FAE1BD4EC5A /* Pods-ParkMe-resources.sh */,
+				61707A3EFA5DB8C2A5A21BA712BC2931 /* Pods-ParkMe-umbrella.h */,
+				5FFA5F628B1486F57D31E9199973289B /* Pods-ParkMe.debug.xcconfig */,
+				5E551403CEF44638DEC35AC8D4164E05 /* Pods-ParkMe.release.xcconfig */,
+			);
+			name = "Pods-ParkMe";
+			path = "Target Support Files/Pods-ParkMe";
+			sourceTree = "<group>";
+		};
+		790F6E7AD202CE4F6034DBFB59C1AF5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CA178D40B3583453B95DC1A7D5D503F /* OneSignalOutcomes.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E77AC356694273E9A9634C01A4A17F /* Binary */ = {
+			isa = PBXGroup;
+			children = (
+				1C10511F809710108F61652D9D894E81 /* Frameworks */,
+				FE162B2424640BA5B2A7B3FF949D5911 /* Resources */,
+			);
+			name = Binary;
+			sourceTree = "<group>";
+		};
+		A5802790EBA107DB013E238974C319E1 /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				29BF37FE1D86967F3C16B301EA3B74EB /* Frameworks */,
+				38791D4E60C16DF3E38F4700B0396B4E /* OneSignalCore */,
+				5F56EE7CA7982749FD82F97AECC3632A /* OneSignalExtension */,
+				6B3A8C24A84832090A27E4192AD0383A /* OneSignalOutcomes */,
+				E1DB041FEF359E9027FA12B9080CDEEA /* Support Files */,
+			);
+			name = OneSignal;
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		A9433BFB873F1C9C8A67B1D0B5AD10CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A52440F6F2951FA61040F8323E8625D7 /* GoNativeCore-xcframeworks.sh */,
+				19A9FA9B6A0AE6E220340C69D9091197 /* GoNativeCore.debug.xcconfig */,
+				7B83E27B7DF9FFB8780EB40485679EBB /* GoNativeCore.release.xcconfig */,
+				B1691D2ADBF4EDE9A138B606AD1054E0 /* ResourceBundle-GoNativeCore_Privacy-GoNativeCore-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoNativeCore";
+			sourceTree = "<group>";
+		};
+		B08F5F6CAAB17DB4F9F068FFFF48026B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A93385A10FCD9A36FF6DD42634F7A4 /* GoNativeCore-GoNativeCore_Privacy */,
+				B6D373EF12091244904560A5A7CB9B76 /* MedianIcons */,
+				FF5EED788601F4EA7B145075E9FE9970 /* OneSignalPlugin-OneSignalPluginJS */,
+				F3E5D15D4FA4C59CE92FCD5D72178119 /* OneSignalPlugin-OneSignalResources */,
+				208A9A51E6B12AA8021F624AD7566737 /* Pods-MedianIOSTests */,
+				4AF3B972C94DFF11700E306F18F01DF3 /* Pods-OneSignalNotificationServiceExtension */,
+				6415E05D7D1B43FBE6886CA37097D3C8 /* Pods-ParkMe */,
+				91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C79A5A3EFB4E86089966BD897EC8C1CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE6E43DAD84504303B41E794462ED4 /* OneSignalPlugin-xcframeworks.sh */,
+				D24F32514C92A54F03CFF151151B0711 /* OneSignalPlugin.debug.xcconfig */,
+				CF1BEC6D0226FC3F97FDF489F2B5A3D5 /* OneSignalPlugin.release.xcconfig */,
+				106C0B38E84C26644E67D25E97D764F3 /* ResourceBundle-OneSignalPluginJS-OneSignalPlugin-Info.plist */,
+				A1F3C93E84F945A2FD78EB42FA758037 /* ResourceBundle-OneSignalResources-OneSignalPlugin-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OneSignalPlugin";
+			sourceTree = "<group>";
+		};
+		CF0C2179F63CC39773905E979FAAF0C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98C26968876B0D34DECF8F3A9641BF8 /* OneSignalExtension.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				41CBBCD293667867F2C22B8464F904F2 /* Pods */,
+				B08F5F6CAAB17DB4F9F068FFFF48026B /* Products */,
+				D0FE0B94C7DA533C447A0E655006A42A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0FE0B94C7DA533C447A0E655006A42A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE51DE57122059108AED93F3AD270E43 /* Pods-MedianIOSTests */,
+				6CB8579A1E65FCA83E1BDEDBFCDA9764 /* Pods-OneSignalNotificationServiceExtension */,
+				7802790A48BE285DE6C189EE64C95FEA /* Pods-ParkMe */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E1DB041FEF359E9027FA12B9080CDEEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6EDAD3F47DE2636181239773DD9062F /* OneSignal-xcframeworks.sh */,
+				CB32C618A49283A610B48DA96A21D447 /* OneSignal.debug.xcconfig */,
+				7B42FC7DB0AEC3483FFE2B205C2EB246 /* OneSignal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OneSignal";
+			sourceTree = "<group>";
+		};
+		E615CF55D0805214E99BB28ADB584C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				100CADA574E0105EE32FCE22E03E104B /* GoNativeCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9C22EEF1532C02BD0BA5E568E00C09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68F8E0A2BBEC0FBFB796C9FC5D6532A5 /* FontAwesome.json */,
+				261568FEF5850CEFC3E5E41DC9F4A459 /* FontAwesome6_Brands.ttf */,
+				D883E4D6597BB9744A523156071E0A52 /* FontAwesome6_Light.ttf */,
+				44A1B4A6B50FE4FBF2E8523D337F2631 /* FontAwesome6_Regular.ttf */,
+				630F8581C4146B611491839ED79B72F6 /* FontAwesome6_Solid.ttf */,
+				1B85B594A0DE1F8D99CC90DCE4FEE6F8 /* FontAwesome6_Thin.ttf */,
+				7AC8FEDADFD06E5D0E6A34F314EDF98A /* MaterialDesign.json */,
+				8A5D56A5E71A59B1349C65E81D88F0CB /* MaterialDesign.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FE162B2424640BA5B2A7B3FF949D5911 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C940B17F0CE64047595F3977170C078D /* GNOSPSubscriptions.storyboard */,
+				CF5E463E28570B6CBE915D9AFD3EDA5E /* polyfill.js */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FE51DE57122059108AED93F3AD270E43 /* Pods-MedianIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				353B91D65D1994C379F7D15E93AD3776 /* Pods-MedianIOSTests.modulemap */,
+				68E8C7640BB623E04A2151633FB89E7A /* Pods-MedianIOSTests-acknowledgements.markdown */,
+				C63CE64A90DA4A319CB66883AE3A011E /* Pods-MedianIOSTests-acknowledgements.plist */,
+				F919CA4BC0CC25C8BAE3614838920491 /* Pods-MedianIOSTests-dummy.m */,
+				2EA1D5FCB7EFFE2157FC4945D51094FC /* Pods-MedianIOSTests-Info.plist */,
+				D84FFA6EF90F38000C2BA9C1FCF12B44 /* Pods-MedianIOSTests-umbrella.h */,
+				908D28C3D64B01833E55F255ACAB67B8 /* Pods-MedianIOSTests.debug.xcconfig */,
+				5218CC39EB7D9E6D2BD31B0743FDFFCB /* Pods-MedianIOSTests.release.xcconfig */,
+			);
+			name = "Pods-MedianIOSTests";
+			path = "Target Support Files/Pods-MedianIOSTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C140D6104C6B0CCEAE862ABB74ED7C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CED75E1DD65AF51DB22F66F4263FBE8 /* Pods-ParkMe-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FFF4C96FCF43A36C7F92DC3E4E3904 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16CA13AB620DDBD6A2B833A04189345 /* MedianIcons-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619C919A3F32423C2DC0ECE6B60587E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355FB88B336403E6C31F8FE5B946D586 /* Pods-OneSignalNotificationServiceExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CDCD725E404567B6CEDE98BCE6EB88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7819DD27A1B62DFC933835DFAFBDBF42 /* mz.h in Headers */,
+				374FECA22750A2F7F17CA125C25DB352 /* mz_compat.h in Headers */,
+				7ED6C3C05EA6EE83780A3600C7088B46 /* mz_crypt.h in Headers */,
+				C53D326186927C0C85580CC5FEB133E3 /* mz_os.h in Headers */,
+				AE0F1284A9C414203C1D5C66EDE95E8E /* mz_strm.h in Headers */,
+				8F43694404EAFF6D73EE58928154C0F2 /* mz_strm_buf.h in Headers */,
+				817909CFA2E8032670693BF57A2D5519 /* mz_strm_mem.h in Headers */,
+				C64C28E8B15C171323473E543C608E68 /* mz_strm_os.h in Headers */,
+				E5FA0235CD286C13C0F568946EB0AEA8 /* mz_strm_pkcrypt.h in Headers */,
+				D9C15A8B92E62396D95DB88415A38A8F /* mz_strm_split.h in Headers */,
+				03588B938BECEEF89042E2C73159BEA2 /* mz_strm_wzaes.h in Headers */,
+				A190A9DFC23558006BE5D8D5B6DAE51C /* mz_strm_zlib.h in Headers */,
+				49900106BEFC9C1BEB3E96558C0C4AE8 /* mz_zip.h in Headers */,
+				4E56BA148170B3A6E7FA6D312B06C784 /* mz_zip_rw.h in Headers */,
+				4569AD436BB87FA37A01C5C982F025A2 /* SSZipArchive.h in Headers */,
+				D2E6ED217227452C59C9B29C62858F7C /* SSZipArchive-umbrella.h in Headers */,
+				FF500FD55C6C8DD8418FA2290B95811A /* SSZipCommon.h in Headers */,
+				AAF2B7BD4C56295DBA1BB6039AC0EDD4 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C358E684B65E59FF2841A3B2C7A651A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A29F09609043023A01BF2FED5DBC5CC /* Pods-MedianIOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		342DC4BCB960507542891730A007EEC5 /* GoNativeCore-GoNativeCore_Privacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E932885433802AA8EAB9527A276FAF7A /* Build configuration list for PBXNativeTarget "GoNativeCore-GoNativeCore_Privacy" */;
+			buildPhases = (
+				BC1BAF32429B7EDB510BD0290F51FA5C /* Sources */,
+				C658789070279002964BCEF5D8FCAC91 /* Frameworks */,
+				573182EBAEBF468E14C04C3044E1D689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoNativeCore-GoNativeCore_Privacy";
+			productName = GoNativeCore_Privacy;
+			productReference = 39A93385A10FCD9A36FF6DD42634F7A4 /* GoNativeCore-GoNativeCore_Privacy */;
+			productType = "com.apple.product-type.bundle";
+		};
+		42D9E1CFE057ACA78611354A64E68592 /* MedianIcons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C9E4ED75A63FEAFBE28C8946ACFCEDC /* Build configuration list for PBXNativeTarget "MedianIcons" */;
+			buildPhases = (
+				27FFF4C96FCF43A36C7F92DC3E4E3904 /* Headers */,
+				BCCDCBA8043AE53BCBB39E8283CCB6A3 /* Sources */,
+				9537ED8A30D285137D4A8A2071FBEE8D /* Frameworks */,
+				18325E06C9FFB4F356459AB66A7AF540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedianIcons;
+			productName = MedianIcons;
+			productReference = B6D373EF12091244904560A5A7CB9B76 /* MedianIcons */;
+			productType = "com.apple.product-type.framework";
+		};
+		625C97BB2B6D7ADBAC1EAE3F2940D574 /* OneSignalPlugin-OneSignalPluginJS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9768928A97ADADD0A6B36879FA6D6ED9 /* Build configuration list for PBXNativeTarget "OneSignalPlugin-OneSignalPluginJS" */;
+			buildPhases = (
+				23FFC12375DDFDB93A68A7BAE9EAA92B /* Sources */,
+				69381C46A8DECE5CA3D017C0AFCC1B16 /* Frameworks */,
+				E1ABA5075F9F6C34EA936030A8EE9AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OneSignalPlugin-OneSignalPluginJS";
+			productName = OneSignalPluginJS;
+			productReference = FF5EED788601F4EA7B145075E9FE9970 /* OneSignalPlugin-OneSignalPluginJS */;
+			productType = "com.apple.product-type.bundle";
+		};
+		63E02A99A718A18CDF4B8740B94BD852 /* Pods-ParkMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4F159D86ECFEF06A7A0818F7C34480 /* Build configuration list for PBXNativeTarget "Pods-ParkMe" */;
+			buildPhases = (
+				1C140D6104C6B0CCEAE862ABB74ED7C3 /* Headers */,
+				0D86FDABB89B1F3DB92B4E1C0FCA67E3 /* Sources */,
+				1FE6E4A7402C630F698F309A5C59FD5A /* Frameworks */,
+				E95E82EBA3A10440D7F4BAC5552DE6E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34A90C4735794C83F37C5F8D41567E1 /* PBXTargetDependency */,
+				2CB064BB49F050D25DC507CEC57CA2E1 /* PBXTargetDependency */,
+				1534802F71425E874C77CA24BECFDE15 /* PBXTargetDependency */,
+				478B874C687886D7AAF107E66A4533DC /* PBXTargetDependency */,
+				4FA51CD0C3FFA0C876FF5BCD49306549 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParkMe";
+			productName = Pods_ParkMe;
+			productReference = 6415E05D7D1B43FBE6886CA37097D3C8 /* Pods-ParkMe */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F0AD6074FE4E456D37BE6BD69B9B551 /* OneSignalPlugin-OneSignalResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F688E242AFBEB6C3CE608F73071CC75 /* Build configuration list for PBXNativeTarget "OneSignalPlugin-OneSignalResources" */;
+			buildPhases = (
+				60A3F0AC8A78F24320B95D9404C5B3CD /* Sources */,
+				1AD1D41BA2C6695DBB29F7B84F326978 /* Frameworks */,
+				500BD66E8BA494BADC064A6C945A3B35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OneSignalPlugin-OneSignalResources";
+			productName = OneSignalResources;
+			productReference = F3E5D15D4FA4C59CE92FCD5D72178119 /* OneSignalPlugin-OneSignalResources */;
+			productType = "com.apple.product-type.bundle";
+		};
+		73F338EB12754A10607D281C43AE89D3 /* Pods-MedianIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2C94D251520426A223AB6203972B6E /* Build configuration list for PBXNativeTarget "Pods-MedianIOSTests" */;
+			buildPhases = (
+				6C358E684B65E59FF2841A3B2C7A651A /* Headers */,
+				C8CA6DB1D4E252F42669A574FB9DD6BE /* Sources */,
+				B2D7653B61593915482943BD45BC8CF6 /* Frameworks */,
+				F37BD34612A83F63BC4EB18FF0AF6F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01E54DDAF847DE7A83DE1BBC90146CE7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MedianIOSTests";
+			productName = Pods_MedianIOSTests;
+			productReference = 208A9A51E6B12AA8021F624AD7566737 /* Pods-MedianIOSTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD0F10574EB554D7E668F50D2A5B77DF /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75D963E5295E48E80D033DDEB6105F1 /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				619C919A3F32423C2DC0ECE6B60587E4 /* Headers */,
+				DC52F67F04E047AC0D76EC4EBBBD8DDB /* Sources */,
+				4D6F1C11B8B25778B206D1CE4C7BCDA1 /* Frameworks */,
+				90F33F2A6F2D846E950386F40B079B3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4744E28D50B8E6DC074D5628C4CD49E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			productName = Pods_OneSignalNotificationServiceExtension;
+			productReference = 4AF3B972C94DFF11700E306F18F01DF3 /* Pods-OneSignalNotificationServiceExtension */;
+			productType = "com.apple.product-type.framework";
+		};
+		F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E86C95B2CC48E329293EC1606BA231C /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				65CDCD725E404567B6CEDE98BCE6EB88 /* Headers */,
+				049BE71707DDB25A944AB502CE7E174A /* Sources */,
+				7B7CCC4D3C186BB73A6D1F0A0DCB559D /* Frameworks */,
+				68B18CAE9D89E3559204AEEBF86D5F3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B08F5F6CAAB17DB4F9F068FFFF48026B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0412DEF5B0065DDF6F89C12727DA5240 /* GoNativeCore */,
+				342DC4BCB960507542891730A007EEC5 /* GoNativeCore-GoNativeCore_Privacy */,
+				42D9E1CFE057ACA78611354A64E68592 /* MedianIcons */,
+				210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */,
+				9110A21A4290DBD3319BF0C6C75DA709 /* OneSignalPlugin */,
+				625C97BB2B6D7ADBAC1EAE3F2940D574 /* OneSignalPlugin-OneSignalPluginJS */,
+				6F0AD6074FE4E456D37BE6BD69B9B551 /* OneSignalPlugin-OneSignalResources */,
+				73F338EB12754A10607D281C43AE89D3 /* Pods-MedianIOSTests */,
+				BD0F10574EB554D7E668F50D2A5B77DF /* Pods-OneSignalNotificationServiceExtension */,
+				63E02A99A718A18CDF4B8740B94BD852 /* Pods-ParkMe */,
+				F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18325E06C9FFB4F356459AB66A7AF540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C171D1890D70EED265FCE3C5240091 /* FontAwesome.json in Resources */,
+				2447F98C827F2FE7082D6036FEC94BF5 /* FontAwesome6_Brands.ttf in Resources */,
+				AD3334681B057E7FAEB50F6C79347164 /* FontAwesome6_Light.ttf in Resources */,
+				1567206362BF074F1B55F70FBA33DEC2 /* FontAwesome6_Regular.ttf in Resources */,
+				2D6FB8768A6B2798FC84316E93E457A3 /* FontAwesome6_Solid.ttf in Resources */,
+				4940BEF2C2ED6F1A786C9C4C70B371A1 /* FontAwesome6_Thin.ttf in Resources */,
+				D077148F7C355824C44ECBFAC5D50323 /* MaterialDesign.json in Resources */,
+				E4482CD4C4A4EEBEE27D535EB5A2EC04 /* MaterialDesign.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500BD66E8BA494BADC064A6C945A3B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBDAB1C9EB792999ED29F9FF7361DC9 /* GNOSPSubscriptions.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		573182EBAEBF468E14C04C3044E1D689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554D1B2642E5DC39FBFB2150079988E6 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B18CAE9D89E3559204AEEBF86D5F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F33F2A6F2D846E950386F40B079B3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1ABA5075F9F6C34EA936030A8EE9AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D201CC4FCEA9AA889C5158ADFFEE9829 /* polyfill.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E82EBA3A10440D7F4BAC5552DE6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37BD34612A83F63BC4EB18FF0AF6F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC561DE65F0F66F6AE8852576B8C8B7 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OneSignal/OneSignal-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OneSignal/OneSignal-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OneSignal/OneSignal-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		397CE842547213F9828B12D742555AD7 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OneSignalPlugin/OneSignalPlugin-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OneSignalPlugin/OneSignalPlugin-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OneSignalPlugin/OneSignalPlugin-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54CE520BF48FDF793375B81727629EC /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoNativeCore/GoNativeCore-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoNativeCore/GoNativeCore-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GoNativeCore/GoNativeCore-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049BE71707DDB25A944AB502CE7E174A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352E63E404CED072E7F714C52FF93E49 /* mz_compat.c in Sources */,
+				60E384ABEF99F5104C99DCB596E2BE95 /* mz_crypt.c in Sources */,
+				E283D8FF283E09D9CF863A27B55886EF /* mz_crypt_apple.c in Sources */,
+				6577A9EB1AED47B915B7F77C3F8BF335 /* mz_os.c in Sources */,
+				3683A04365A59519AAB2F47C5FA6FA3C /* mz_os_posix.c in Sources */,
+				823033F3DF2D5C7C4B123A277DB55073 /* mz_strm.c in Sources */,
+				8415E191A2886EC3426A01BC86299E1F /* mz_strm_buf.c in Sources */,
+				27293E7084BFE6AF873BB233419CFA2D /* mz_strm_mem.c in Sources */,
+				B4DF1CDCE2413AF579E102954A4033F6 /* mz_strm_os_posix.c in Sources */,
+				4C8A5ADD06D2DFC9E7FA2A1CA9DD565A /* mz_strm_pkcrypt.c in Sources */,
+				68D4A83EA695C463981E04DAD037064F /* mz_strm_split.c in Sources */,
+				C9AFC6682FD2C8231E779A4349DBDFD6 /* mz_strm_wzaes.c in Sources */,
+				84B5FB65B38C19F534F49DE6471C0E5B /* mz_strm_zlib.c in Sources */,
+				FBF481A2EC25D99DC41914AE7B9754D2 /* mz_zip.c in Sources */,
+				090CC8DB2713055B65F3693A67A9F0AF /* mz_zip_rw.c in Sources */,
+				A71E222C76A20B18600A6DE4091CFB0E /* SSZipArchive.m in Sources */,
+				A90260F860E51EC89130250EA3E61F22 /* SSZipArchive-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D86FDABB89B1F3DB92B4E1C0FCA67E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A188B0071B5FE465CCF40BFFB0DEEAE /* Pods-ParkMe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FFC12375DDFDB93A68A7BAE9EAA92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A3F0AC8A78F24320B95D9404C5B3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1BAF32429B7EDB510BD0290F51FA5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCDCBA8043AE53BCBB39E8283CCB6A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0C13AD4DAF662871D11E237EFF1C5E /* Font.swift in Sources */,
+				BE9F1461F54BCB68FCA4EC42572F2D0A /* FontFactory.swift in Sources */,
+				DE5FDBDD5D7E1CD682CB14A90D07961D /* FontLoader.swift in Sources */,
+				4B537D7EED02B9651AD870CABF49BABE /* MedianIcons-dummy.m in Sources */,
+				5C3453F2DD57FBB3E8CDA20B84FB62EB /* NSAttributedString+Font.swift in Sources */,
+				5AE8274362638FD006B41882BF55F387 /* UIImage+Font.swift in Sources */,
+				982E562468DAEA210F469728F0F0E537 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CA6DB1D4E252F42669A574FB9DD6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0994B99658439DACF267379BB9B5B87 /* Pods-MedianIOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC52F67F04E047AC0D76EC4EBBBD8DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD8B726A2DA73578AA71D66645E6AD1 /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01E54DDAF847DE7A83DE1BBC90146CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ParkMe";
+			target = 63E02A99A718A18CDF4B8740B94BD852 /* Pods-ParkMe */;
+			targetProxy = 4D2C8ACD08D6A4C48C78B2E1C73759BA /* PBXContainerItemProxy */;
+		};
+		062ECE3762B9E59B80EE38DEB430A174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoNativeCore;
+			target = 0412DEF5B0065DDF6F89C12727DA5240 /* GoNativeCore */;
+			targetProxy = 913923D5D8ECD41F29E128E5CA5F046A /* PBXContainerItemProxy */;
+		};
+		098E52912561F72400EB1078EA3DAEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OneSignalPlugin-OneSignalResources";
+			target = 6F0AD6074FE4E456D37BE6BD69B9B551 /* OneSignalPlugin-OneSignalResources */;
+			targetProxy = DBF0E123F326A45E3FDE03A998B41C8A /* PBXContainerItemProxy */;
+		};
+		09E91CAE603D1EA1006590BCDAA7344F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = F9FB37ECDD5EA4DDFB7A5AA19B1B296B /* PBXContainerItemProxy */;
+		};
+		1534802F71425E874C77CA24BECFDE15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = F44A0850815BE50AF554E9356BC9F4A4 /* PBXContainerItemProxy */;
+		};
+		2CB064BB49F050D25DC507CEC57CA2E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MedianIcons;
+			target = 42D9E1CFE057ACA78611354A64E68592 /* MedianIcons */;
+			targetProxy = 455B86FAB6978A51B5AB7BF74516D071 /* PBXContainerItemProxy */;
+		};
+		4744E28D50B8E6DC074D5628C4CD49E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignal;
+			target = 210EB05CEC7AD9C148F90F752DE74C48 /* OneSignal */;
+			targetProxy = FF35000A21092FED4EF7CDD54AD3BB93 /* PBXContainerItemProxy */;
+		};
+		478B874C687886D7AAF107E66A4533DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignalPlugin;
+			target = 9110A21A4290DBD3319BF0C6C75DA709 /* OneSignalPlugin */;
+			targetProxy = 1734D07E0B1B054332D319034D1D77CF /* PBXContainerItemProxy */;
+		};
+		4FA51CD0C3FFA0C876FF5BCD49306549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = 56CEDAE4A8C1F0BB68192E8582840A9D /* PBXContainerItemProxy */;
+		};
+		7F094C87EEE35D06E5FA7C12A8512DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OneSignalPlugin-OneSignalPluginJS";
+			target = 625C97BB2B6D7ADBAC1EAE3F2940D574 /* OneSignalPlugin-OneSignalPluginJS */;
+			targetProxy = 04444ECE2B0EFA5CA0E26430241DE0A2 /* PBXContainerItemProxy */;
+		};
+		B34A90C4735794C83F37C5F8D41567E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoNativeCore;
+			target = 0412DEF5B0065DDF6F89C12727DA5240 /* GoNativeCore */;
+			targetProxy = 2D0349D7225139D8C4854E0AFF2AF6C5 /* PBXContainerItemProxy */;
+		};
+		EDD4B8BA10C3738011C0BD219472233B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoNativeCore-GoNativeCore_Privacy";
+			target = 342DC4BCB960507542891730A007EEC5 /* GoNativeCore-GoNativeCore_Privacy */;
+			targetProxy = E0401ED4BBB2FE9AC868E03C3EC7FE0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07707015218E6BAE23C699506DB1608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B83E27B7DF9FFB8780EB40485679EBB /* GoNativeCore.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoNativeCore";
+				IBSC_MODULE = GoNativeCore;
+				INFOPLIST_FILE = "Target Support Files/GoNativeCore/ResourceBundle-GoNativeCore_Privacy-GoNativeCore-Info.plist";
+				PRODUCT_NAME = GoNativeCore_Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0F8412601D906EA6D2C3B1101BB2A703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78205123D9076C87414D04DF8BD56AD2 /* SSZipArchive.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11464098C5E711447A436EBFF8CB289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1BEC6D0226FC3F97FDF489F2B5A3D5 /* OneSignalPlugin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13F09574AB7F95B4EA90EF2821528AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFA5F628B1486F57D31E9199973289B /* Pods-ParkMe.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkMe/Pods-ParkMe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkMe/Pods-ParkMe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33E3C3BD73B1568859DA7C69F79B7E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1BEC6D0226FC3F97FDF489F2B5A3D5 /* OneSignalPlugin.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OneSignalPlugin";
+				IBSC_MODULE = OneSignalPlugin;
+				INFOPLIST_FILE = "Target Support Files/OneSignalPlugin/ResourceBundle-OneSignalResources-OneSignalPlugin-Info.plist";
+				PRODUCT_NAME = OneSignalResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3A49AA9A2B273E5886C1845239100421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB32C618A49283A610B48DA96A21D447 /* OneSignal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		448ACD6FD4986C4586B62FB318ADCE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1BEC6D0226FC3F97FDF489F2B5A3D5 /* OneSignalPlugin.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OneSignalPlugin";
+				IBSC_MODULE = OneSignalPlugin;
+				INFOPLIST_FILE = "Target Support Files/OneSignalPlugin/ResourceBundle-OneSignalPluginJS-OneSignalPlugin-Info.plist";
+				PRODUCT_NAME = OneSignalPluginJS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		64A63BB256FBE28DFFD7286E525E4525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4691EA7E72C7989F89FFAE57A8AEA81D /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		981F91C4383B8CC2F71056BACDE155C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24F32514C92A54F03CFF151151B0711 /* OneSignalPlugin.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OneSignalPlugin";
+				IBSC_MODULE = OneSignalPlugin;
+				INFOPLIST_FILE = "Target Support Files/OneSignalPlugin/ResourceBundle-OneSignalPluginJS-OneSignalPlugin-Info.plist";
+				PRODUCT_NAME = OneSignalPluginJS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		98B64F3D3D121DD3C8191BB607988299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E551403CEF44638DEC35AC8D4164E05 /* Pods-ParkMe.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkMe/Pods-ParkMe-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkMe/Pods-ParkMe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A725DD0378573E6B16C1DD8E9BC7629B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDDC00B09928348AB84EC9BFCBEB8F9 /* MedianIcons.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/MedianIcons/MedianIcons-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/MedianIcons/MedianIcons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MedianIcons/MedianIcons.modulemap";
+				PRODUCT_MODULE_NAME = MedianIcons;
+				PRODUCT_NAME = MedianIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7A674DCEB9CF3F6CCED55090B499E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B6517195D9F2D90BADE2A86D5F51EC /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ABCE78140CC26D7C52EEFF124CFAD891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B090CE04290E938532B773413C98F6 /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B59D05D2591192770F9218EB32D088CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24F32514C92A54F03CFF151151B0711 /* OneSignalPlugin.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OneSignalPlugin";
+				IBSC_MODULE = OneSignalPlugin;
+				INFOPLIST_FILE = "Target Support Files/OneSignalPlugin/ResourceBundle-OneSignalResources-OneSignalPlugin-Info.plist";
+				PRODUCT_NAME = OneSignalResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C0EFDA064C0A34850775C6E8376CE609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908D28C3D64B01833E55F255ACAB67B8 /* Pods-MedianIOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C79942EBD50A62EB4DC8E1678DEDBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E134DFE4127ADFDB89B4C754209084E6 /* MedianIcons.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/MedianIcons/MedianIcons-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/MedianIcons/MedianIcons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MedianIcons/MedianIcons.modulemap";
+				PRODUCT_MODULE_NAME = MedianIcons;
+				PRODUCT_NAME = MedianIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE0A918CC361B5BCF71FFF239ABFF7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A9FA9B6A0AE6E220340C69D9091197 /* GoNativeCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0850C14E02BF4D1C8C30A516F39858F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A9FA9B6A0AE6E220340C69D9091197 /* GoNativeCore.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoNativeCore";
+				IBSC_MODULE = GoNativeCore;
+				INFOPLIST_FILE = "Target Support Files/GoNativeCore/ResourceBundle-GoNativeCore_Privacy-GoNativeCore-Info.plist";
+				PRODUCT_NAME = GoNativeCore_Privacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D706D89DBC6A3672F04E3DD7AAF69CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B83E27B7DF9FFB8780EB40485679EBB /* GoNativeCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70F8AB095C8A7BA142F4F0B8AF458E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B42FC7DB0AEC3483FFE2B205C2EB246 /* OneSignal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F819AB7CCFB15C4DE1D9CA2B6E938FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5218CC39EB7D9E6D2BD31B0743FDFFCB /* Pods-MedianIOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F858ADE5DCBB9BB7861A7D22EA48D9B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24F32514C92A54F03CFF151151B0711 /* OneSignalPlugin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06585EDCFB3796C178631B93CE2F929C /* Build configuration list for PBXAggregateTarget "GoNativeCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0A918CC361B5BCF71FFF239ABFF7E2 /* Debug */,
+				D706D89DBC6A3672F04E3DD7AAF69CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F688E242AFBEB6C3CE608F73071CC75 /* Build configuration list for PBXNativeTarget "OneSignalPlugin-OneSignalResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59D05D2591192770F9218EB32D088CD /* Debug */,
+				33E3C3BD73B1568859DA7C69F79B7E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C9E4ED75A63FEAFBE28C8946ACFCEDC /* Build configuration list for PBXNativeTarget "MedianIcons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C79942EBD50A62EB4DC8E1678DEDBFFE /* Debug */,
+				A725DD0378573E6B16C1DD8E9BC7629B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B74A7EE9F4F05C31F8B9DD46E054CFD /* Build configuration list for PBXAggregateTarget "OneSignalPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F858ADE5DCBB9BB7861A7D22EA48D9B4 /* Debug */,
+				11464098C5E711447A436EBFF8CB289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E86C95B2CC48E329293EC1606BA231C /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCE78140CC26D7C52EEFF124CFAD891 /* Debug */,
+				0F8412601D906EA6D2C3B1101BB2A703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2C94D251520426A223AB6203972B6E /* Build configuration list for PBXNativeTarget "Pods-MedianIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0EFDA064C0A34850775C6E8376CE609 /* Debug */,
+				F819AB7CCFB15C4DE1D9CA2B6E938FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9768928A97ADADD0A6B36879FA6D6ED9 /* Build configuration list for PBXNativeTarget "OneSignalPlugin-OneSignalPluginJS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981F91C4383B8CC2F71056BACDE155C9 /* Debug */,
+				448ACD6FD4986C4586B62FB318ADCE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75D963E5295E48E80D033DDEB6105F1 /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A674DCEB9CF3F6CCED55090B499E2B /* Debug */,
+				64A63BB256FBE28DFFD7286E525E4525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4BEDE8419E52BD08B0E6C875B5CD08A /* Build configuration list for PBXAggregateTarget "OneSignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A49AA9A2B273E5886C1845239100421 /* Debug */,
+				F70F8AB095C8A7BA142F4F0B8AF458E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4F159D86ECFEF06A7A0818F7C34480 /* Build configuration list for PBXNativeTarget "Pods-ParkMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F09574AB7F95B4EA90EF2821528AD8 /* Debug */,
+				98B64F3D3D121DD3C8191BB607988299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E932885433802AA8EAB9527A276FAF7A /* Build configuration list for PBXNativeTarget "GoNativeCore-GoNativeCore_Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0850C14E02BF4D1C8C30A516F39858F /* Debug */,
+				07707015218E6BAE23C699506DB1608A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
