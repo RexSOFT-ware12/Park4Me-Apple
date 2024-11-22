@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: org.park4me.ios
+        bundle_identifier: AuthSign
       vars:
         BUNDLE_ID: "io.codemagic.sample.iosnative"
         XCODE_WORKSPACE: "ParkMe.xcworkspace" # <-- Put the name of your Xcode workspace here
