@@ -13,7 +13,7 @@ workflows:
         BUNDLE_ID: "com.park4me.pushNotification"
         XCODE_WORKSPACE: "ParkMe.xcworkspace" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "ParkMe.xcodeproj" # <-- Put the name of your Xcode scheme here
-        APP_STORE_APPLE_ID: 6738490049
+        APP_STORE_APPLE_ID: 6738696238
       xcode: latest
       cocoapods: default
     scripts:
@@ -40,7 +40,7 @@ workflows:
     publishing:
       email:
         recipients:
-          -pehjos4@gmail.com
+          - pehjos4@gmail.com
           - vincentpsmith88@gmail.com
         notify:
           success: true
