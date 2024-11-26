@@ -40,6 +40,7 @@ workflows:
     publishing:
       email:
         recipients:
+          -pehjos4@gmail.com
           - vincentpsmith88@gmail.com
         notify:
           success: true
