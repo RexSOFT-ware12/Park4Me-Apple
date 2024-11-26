@@ -12,7 +12,7 @@ workflows:
       vars:
         BUNDLE_ID: "com.park4me.pushNotification"
         XCODE_WORKSPACE: "ParkMe.xcworkspace"
-        XCODE_SCHEME: "ParkMe" # Corrected scheme name
+        XCODE_SCHEME: "Park4Me" # Corrected scheme name
         APP_STORE_APPLE_ID: 6738696238
       xcode: latest
       cocoapods: default
