@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07E14CEB7D23C24F4C58CDB9 /* Pods_ParkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056F86DB67DF32C585445D5E /* Pods_ParkMe.framework */; };
+		012CD400BC50CA398991A500 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2E1BBDB0C9E24D65350A7CC1 /* OneSignalNotificationServiceExtension.appex */; };
 		2002B49C18A9991300495B3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2002B49B18A9991300495B3D /* Foundation.framework */; };
 		2002B49E18A9991300495B3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2002B49D18A9991300495B3D /* CoreGraphics.framework */; };
 		2002B4A018A9991300495B3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2002B49F18A9991300495B3D /* UIKit.framework */; };
@@ -97,11 +97,11 @@
 		39D073812BBB12EA004FF636 /* LEANPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D073802BBB12EA004FF636 /* LEANPDFManager.m */; };
 		39DE1B492935E67F0001E926 /* GNLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE1B482935E67F0001E926 /* GNLogManager.m */; };
 		39DE1E4D2C82015900E96CFE /* LEANLoadingSpinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */; };
-		5406E4AD6D069D7626325713 /* appConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 208A9F41191AEBAD0049E664 /* appConfig.json */; };
-		59E50AF6D368FBDC4D642A72 /* custom_sound_1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E217B922D4261E2BB82F46E4 /* custom_sound_1.caf */; };
-		744ED140C095F45EA266F170 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802D4EE0E047F3B9A44FA56B /* Foundation.framework */; };
-		86B461D7A93230E0BEBDBAFD /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DE39BA45AE8098F0342CAFF6 /* OneSignalNotificationServiceExtension.appex */; };
+		493C3EEBB0564B4406143649 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F5A094AAE0C64CD1756576 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		73A07C998BC97AFE65A5554C /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DE1B3C8D2C05D2103F99D8 /* NotificationService.m */; };
+		8E5904BA0FC2EE8875B77FDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E894656ECE3F0647474CDA4 /* Foundation.framework */; };
 		93DA21EB31AE6F56B651894C /* Pods_MedianIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */; };
+		BAE8607736A6DCC931DAD670 /* appConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 208A9F41191AEBAD0049E664 /* appConfig.json */; };
 		BB3C460E26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js in Resources */ = {isa = PBXBuildFile; fileRef = BB3C460D26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js */; };
 		BB6E68A9273C731E004846A3 /* GNJSBridgeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6E68A8273C731E004846A3 /* GNJSBridgeInterface.m */; };
 		BB9A3B012631D2A7002C38F1 /* LEANIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9A3B002631D2A7002C38F1 /* LEANIcons.swift */; };
@@ -110,8 +110,8 @@
 		BBED1D612A4CBEB000180EBF /* customJS.js in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D602A4CBEB000180EBF /* customJS.js */; };
 		BBED1D632A4CBEC900180EBF /* iosCustomCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D622A4CBEC900180EBF /* iosCustomCSS.css */; };
 		BBED1D652A4CBED900180EBF /* iosCustomJS.js in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D642A4CBED900180EBF /* iosCustomJS.js */; };
-		D0E4CE702662FC8129201656 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0F2606A32D0BACC91FB3A2 /* NotificationService.m */; };
-		F603E2DF04260F098E1BA77F /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F1BD719B35A4D7540A9EFF /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		C1294DCA0E5215FCBD2D4D0B /* Pods_ParkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1978CB22ED2980883DEA5BF7 /* Pods_ParkMe.framework */; };
+		F54CD2ED1DCDED4504AD341E /* custom_sound_1.caf in Resources */ = {isa = PBXBuildFile; fileRef = A110BD3D270BD161AC68E374 /* custom_sound_1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,11 +122,11 @@
 			remoteGlobalIDString = 2002B49718A9991300495B3D;
 			remoteInfo = LeanIOS;
 		};
-		E12AAF7D7CD873BBB2B34C63 /* PBXContainerItemProxy */ = {
+		948D5A890F03B59CEE92CF3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2002B49018A9991300495B3D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 35F21462E13D348FF167D587;
+			remoteGlobalIDString = 5F588D373630461F807054C5;
 			remoteInfo = OneSignalNotificationServiceExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -138,7 +138,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				86B461D7A93230E0BEBDBAFD /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+				012CD400BC50CA398991A500 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +146,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		056F86DB67DF32C585445D5E /* Pods_ParkMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DE1B3C8D2C05D2103F99D8 /* NotificationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedianIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D20386DA3526AEF0FFC89B /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		1978CB22ED2980883DEA5BF7 /* Pods_ParkMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49818A9991300495B3D /* Park4Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Park4Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49B18A9991300495B3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2002B49D18A9991300495B3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -263,13 +265,13 @@
 		20F49C2619C7BE9100B46C5A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		20FC7FB3199D1C7800A70B08 /* LEANTabManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANTabManager.h; sourceTree = "<group>"; };
 		20FC7FB4199D1C7800A70B08 /* LEANTabManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANTabManager.m; sourceTree = "<group>"; };
+		2E1BBDB0C9E24D65350A7CC1 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		37011C952BC40AAE00775CA0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		374399B52C2229E300B2F92D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		379E3D422A2147C4001C8A01 /* GNSwiftUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSwiftUtilities.swift; sourceTree = "<group>"; };
 		3909A5A82C1C99E7001F68C3 /* MedianEventsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianEventsManager.m; sourceTree = "<group>"; };
 		3909A5AA2C1C99EE001F68C3 /* MedianEventsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedianEventsManager.h; sourceTree = "<group>"; };
 		3946F0272BD0DE7100E74ED5 /* ContextMenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuHandler.swift; sourceTree = "<group>"; };
-		39540F346E8805E9195BF4CE /* Pods-ParkMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMe.debug.xcconfig"; path = "Target Support Files/Pods-ParkMe/Pods-ParkMe.debug.xcconfig"; sourceTree = "<group>"; };
 		395C156F2B75D19D00E2985D /* LEANWindowsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWindowsManager.m; sourceTree = "<group>"; };
 		395C15712B75D1A900E2985D /* LEANWindowsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANWindowsManager.h; sourceTree = "<group>"; };
 		396F42232A970DF9003FD87E /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
@@ -286,17 +288,15 @@
 		39DE1B482935E67F0001E926 /* GNLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNLogManager.m; sourceTree = "<group>"; };
 		39DE1E4B2C82014300E96CFE /* LEANLoadingSpinnerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANLoadingSpinnerManager.h; sourceTree = "<group>"; };
 		39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoadingSpinnerManager.m; sourceTree = "<group>"; };
-		400FAFF4D5001881AB39B74E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427DB6BBC217A708318F256E /* NotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		50F1BD719B35A4D7540A9EFF /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		512D261B57FB39B5829E55C7 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
-		63A55B74B332E38122C7F15A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		74686CE5E5C79A441C3D2C20 /* Pods-Median.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.debug.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.debug.xcconfig"; sourceTree = "<group>"; };
-		802D4EE0E047F3B9A44FA56B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A07FCB370676D360B7F490DA /* NotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		86F5A094AAE0C64CD1756576 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E894656ECE3F0647474CDA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A110BD3D270BD161AC68E374 /* custom_sound_1.caf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = custom_sound_1.caf; path = Resources/custom_sound_1.caf; sourceTree = "<group>"; };
 		A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.release.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		ABB1C00C28DF0000F18096D4 /* Pods-ParkMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMe.release.xcconfig"; path = "Target Support Files/Pods-ParkMe/Pods-ParkMe.release.xcconfig"; sourceTree = "<group>"; };
-		B12609BC7F84C81B49627738 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		B7EF5BBCE91460CA6EE909B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B970975E7C59B7E713CA1574 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		BB182FAF2683478900DC8EAA /* LEANDlogDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANDlogDefinition.h; sourceTree = "<group>"; };
 		BB3C460D26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GoNativeJSBridgeLibrary.js; sourceTree = "<group>"; };
 		BB6E68A7273C7308004846A3 /* GNJSBridgeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNJSBridgeInterface.h; sourceTree = "<group>"; };
@@ -307,9 +307,9 @@
 		BBED1D602A4CBEB000180EBF /* customJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = customJS.js; sourceTree = "<group>"; };
 		BBED1D622A4CBEC900180EBF /* iosCustomCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iosCustomCSS.css; sourceTree = "<group>"; };
 		BBED1D642A4CBED900180EBF /* iosCustomJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iosCustomJS.js; sourceTree = "<group>"; };
-		CE0F2606A32D0BACC91FB3A2 /* NotificationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
-		DE39BA45AE8098F0342CAFF6 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E217B922D4261E2BB82F46E4 /* custom_sound_1.caf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = custom_sound_1.caf; path = Resources/custom_sound_1.caf; sourceTree = "<group>"; };
+		C059905AFFAD3F9713FC955F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C54B1E5C963AEAAC25F436B1 /* Pods-ParkMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMe.release.xcconfig"; path = "Target Support Files/Pods-ParkMe/Pods-ParkMe.release.xcconfig"; sourceTree = "<group>"; };
+		D65CC005265F79F6AB0C98FC /* Pods-ParkMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkMe.debug.xcconfig"; path = "Target Support Files/Pods-ParkMe/Pods-ParkMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.release.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -332,7 +332,7 @@
 				2002B49E18A9991300495B3D /* CoreGraphics.framework in Frameworks */,
 				2002B4A018A9991300495B3D /* UIKit.framework in Frameworks */,
 				2002B49C18A9991300495B3D /* Foundation.framework in Frameworks */,
-				07E14CEB7D23C24F4C58CDB9 /* Pods_ParkMe.framework in Frameworks */,
+				C1294DCA0E5215FCBD2D4D0B /* Pods_ParkMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,18 +346,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864CBEDD75DEEF883429F620 /* Frameworks */ = {
+		7DDCEA0CBDD8C7DF82D74A12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744ED140C095F45EA266F170 /* Foundation.framework in Frameworks */,
-				F603E2DF04260F098E1BA77F /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+				8E5904BA0FC2EE8875B77FDA /* Foundation.framework in Frameworks */,
+				493C3EEBB0564B4406143649 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1008AF7053260AAE6263E0A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A110BD3D270BD161AC68E374 /* custom_sound_1.caf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2002B48F18A9991300495B3D = {
 			isa = PBXGroup;
 			children = (
@@ -367,8 +375,8 @@
 				2002B49A18A9991300495B3D /* Frameworks */,
 				2002B49918A9991300495B3D /* Products */,
 				94421A86163F4578AAF865FD /* Pods */,
-				C73E8DE24C79407294A754B8 /* Resources */,
-				BA72104FD0F78410715F1479 /* OneSignalNotificationServiceExtension */,
+				1008AF7053260AAE6263E0A0 /* Resources */,
+				37506AC03508A647335FF679 /* OneSignalNotificationServiceExtension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,7 +385,7 @@
 			children = (
 				2002B49818A9991300495B3D /* Park4Me.app */,
 				2002B4BC18A9991300495B3D /* MedianIOSTests.xctest */,
-				DE39BA45AE8098F0342CAFF6 /* OneSignalNotificationServiceExtension.appex */,
+				2E1BBDB0C9E24D65350A7CC1 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,9 +409,9 @@
 				2002B49D18A9991300495B3D /* CoreGraphics.framework */,
 				2002B49F18A9991300495B3D /* UIKit.framework */,
 				0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */,
-				B794C5B2F81A3FA0E8A251A2 /* iOS */,
-				50F1BD719B35A4D7540A9EFF /* Pods_OneSignalNotificationServiceExtension.framework */,
-				056F86DB67DF32C585445D5E /* Pods_ParkMe.framework */,
+				E87A5C4FBB8315D452B64E14 /* iOS */,
+				86F5A094AAE0C64CD1756576 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				1978CB22ED2980883DEA5BF7 /* Pods_ParkMe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -591,6 +599,17 @@
 			name = Config;
 			sourceTree = "<group>";
 		};
+		37506AC03508A647335FF679 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				427DB6BBC217A708318F256E /* NotificationService.h */,
+				03DE1B3C8D2C05D2103F99D8 /* NotificationService.m */,
+				B7EF5BBCE91460CA6EE909B9 /* Info.plist */,
+				15D20386DA3526AEF0FFC89B /* OneSignalNotificationServiceExtension.entitlements */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		94421A86163F4578AAF865FD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,39 +617,20 @@
 				F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */,
 				4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */,
 				A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */,
-				63A55B74B332E38122C7F15A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
-				B12609BC7F84C81B49627738 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				39540F346E8805E9195BF4CE /* Pods-ParkMe.debug.xcconfig */,
-				ABB1C00C28DF0000F18096D4 /* Pods-ParkMe.release.xcconfig */,
+				B970975E7C59B7E713CA1574 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				C059905AFFAD3F9713FC955F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				D65CC005265F79F6AB0C98FC /* Pods-ParkMe.debug.xcconfig */,
+				C54B1E5C963AEAAC25F436B1 /* Pods-ParkMe.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B794C5B2F81A3FA0E8A251A2 /* iOS */ = {
+		E87A5C4FBB8315D452B64E14 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				802D4EE0E047F3B9A44FA56B /* Foundation.framework */,
+				8E894656ECE3F0647474CDA4 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		BA72104FD0F78410715F1479 /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				A07FCB370676D360B7F490DA /* NotificationService.h */,
-				CE0F2606A32D0BACC91FB3A2 /* NotificationService.m */,
-				400FAFF4D5001881AB39B74E /* Info.plist */,
-				512D261B57FB39B5829E55C7 /* OneSignalNotificationServiceExtension.entitlements */,
-			);
-			path = OneSignalNotificationServiceExtension;
-			sourceTree = "<group>";
-		};
-		C73E8DE24C79407294A754B8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E217B922D4261E2BB82F46E4 /* custom_sound_1.caf */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,7 +651,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0215C3B125639EA920C100FF /* PBXTargetDependency */,
+				8D1A6823A4F6CDC07FED93EB /* PBXTargetDependency */,
 			);
 			name = Park4Me;
 			productName = LeanIOS;
@@ -677,14 +677,14 @@
 			productReference = 2002B4BC18A9991300495B3D /* MedianIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		35F21462E13D348FF167D587 /* OneSignalNotificationServiceExtension */ = {
+		5F588D373630461F807054C5 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF8A65AAC7CC2CF575544266 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildConfigurationList = 04652807F65F12C47285AF85 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				D036E95E6A8284F3766826B4 /* [CP] Check Pods Manifest.lock */,
-				08066723AB63CD62E80A9181 /* Sources */,
-				864CBEDD75DEEF883429F620 /* Frameworks */,
-				6250E523452F3E47FB672FE8 /* Resources */,
+				A1D97FF69F4BBB76A6590255 /* [CP] Check Pods Manifest.lock */,
+				C918FCFA5654BC2D74D9A66C /* Sources */,
+				7DDCEA0CBDD8C7DF82D74A12 /* Frameworks */,
+				00A8EC37C4DC9EB251B4B311 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -692,7 +692,7 @@
 			);
 			name = OneSignalNotificationServiceExtension;
 			productName = OneSignalNotificationServiceExtension;
-			productReference = DE39BA45AE8098F0342CAFF6 /* OneSignalNotificationServiceExtension.appex */;
+			productReference = 2E1BBDB0C9E24D65350A7CC1 /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -709,6 +709,7 @@
 				TargetAttributes = {
 					2002B49718A9991300495B3D = {
 						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -764,12 +765,20 @@
 			targets = (
 				2002B49718A9991300495B3D /* Park4Me */,
 				2002B4BB18A9991300495B3D /* MedianIOSTests */,
-				35F21462E13D348FF167D587 /* OneSignalNotificationServiceExtension */,
+				5F588D373630461F807054C5 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00A8EC37C4DC9EB251B4B311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE8607736A6DCC931DAD670 /* appConfig.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2002B49618A9991300495B3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -804,7 +813,7 @@
 				2002B4A618A9991300495B3D /* InfoPlist.strings in Resources */,
 				20689025215E9FD900419CB2 /* Localizable.strings in Resources */,
 				20A13AA81905A43C00B997DD /* MenuGroupIcon.xib in Resources */,
-				59E50AF6D368FBDC4D642A72 /* custom_sound_1.caf in Resources */,
+				F54CD2ED1DCDED4504AD341E /* custom_sound_1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,14 +822,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2002B4C818A9991300495B3D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6250E523452F3E47FB672FE8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5406E4AD6D069D7626325713 /* appConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +850,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParkMe/Pods-ParkMe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A1D97FF69F4BBB76A6590255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB858F1AD47A92D5DDD46E4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -865,28 +888,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ParkMe-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D036E95E6A8284F3766826B4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -950,14 +951,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		08066723AB63CD62E80A9181 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0E4CE702662FC8129201656 /* NotificationService.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2002B49418A9991300495B3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1022,19 +1015,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C918FCFA5654BC2D74D9A66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73A07C998BC97AFE65A5554C /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0215C3B125639EA920C100FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OneSignalNotificationServiceExtension;
-			target = 35F21462E13D348FF167D587 /* OneSignalNotificationServiceExtension */;
-			targetProxy = E12AAF7D7CD873BBB2B34C63 /* PBXContainerItemProxy */;
-		};
 		2002B4C218A9991300495B3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2002B49718A9991300495B3D /* Park4Me */;
 			targetProxy = 2002B4C118A9991300495B3D /* PBXContainerItemProxy */;
+		};
+		8D1A6823A4F6CDC07FED93EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OneSignalNotificationServiceExtension;
+			target = 5F588D373630461F807054C5 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 948D5A890F03B59CEE92CF3D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1082,6 +1083,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1CB6D1B5F3C1F2E1EF9B21F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B970975E7C59B7E713CA1574 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				DEVELOPMENT_TEAM = 8ZRM7Z2SR2;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.park4me.pushNotification.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2002B4CB18A9991300495B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1203,15 +1220,16 @@
 		};
 		2002B4CE18A9991300495B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39540F346E8805E9195BF4CE /* Pods-ParkMe.debug.xcconfig */;
+			baseConfigurationReference = D65CC005265F79F6AB0C98FC /* Pods-ParkMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = YMG4NL3JFX;
+				DEVELOPMENT_TEAM = 8ZRM7Z2SR2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					.,
@@ -1220,7 +1238,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
 				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Park4Me;
+				INFOPLIST_KEY_CFBundleDisplayName = Park4me;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1232,7 +1251,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.park4me.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.park4me.pushNotification;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1247,15 +1266,16 @@
 		};
 		2002B4CF18A9991300495B3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABB1C00C28DF0000F18096D4 /* Pods-ParkMe.release.xcconfig */;
+			baseConfigurationReference = C54B1E5C963AEAAC25F436B1 /* Pods-ParkMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = YMG4NL3JFX;
+				DEVELOPMENT_TEAM = 8ZRM7Z2SR2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					.,
@@ -1264,7 +1284,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
 				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Park4Me;
+				INFOPLIST_KEY_CFBundleDisplayName = Park4me;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1276,7 +1297,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.park4me.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.park4me.pushNotification;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1332,46 +1353,33 @@
 			};
 			name = Release;
 		};
-		57AB9127193E7D5892A7AF04 /* Debug */ = {
+		650242AC10320044C3370A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B12609BC7F84C81B49627738 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = C059905AFFAD3F9713FC955F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8ZRM7Z2SR2;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.park4me.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.park4me.pushNotification.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		6A08E09E861B07890A28F080 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63A55B74B332E38122C7F15A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.park4me.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04652807F65F12C47285AF85 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CB6D1B5F3C1F2E1EF9B21F0 /* Release */,
+				650242AC10320044C3370A2E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2002B49318A9991300495B3D /* Build configuration list for PBXProject "Park4Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1395,15 +1403,6 @@
 			buildConfigurations = (
 				2002B4D118A9991300495B3D /* Debug */,
 				2002B4D218A9991300495B3D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF8A65AAC7CC2CF575544266 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A08E09E861B07890A28F080 /* Release */,
-				57AB9127193E7D5892A7AF04 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
