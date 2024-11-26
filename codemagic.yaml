@@ -11,8 +11,8 @@ workflows:
         bundle_identifier: com.park4me.pushNotification
       vars:
         BUNDLE_ID: "com.park4me.pushNotification"
-        XCODE_WORKSPACE: "ParkMe.xcworkspace" # <-- Put the name of your Xcode workspace here
-        XCODE_SCHEME: "ParkMe.xcodeproj" # <-- Put the name of your Xcode scheme here
+        XCODE_WORKSPACE: "ParkMe.xcworkspace"
+        XCODE_SCHEME: "ParkMe" # Corrected scheme name
         APP_STORE_APPLE_ID: 6738696238
       xcode: latest
       cocoapods: default
@@ -47,14 +47,8 @@ workflows:
           failure: false
       app_store_connect:
         auth: integration
-
-        # Configuration related to TestFlight (optional)
-        # Note: This action is performed during post-processing.
         submit_to_testflight: true
-        beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
+        beta_groups: 
           - group name 1
           - group name 2
-
-        # Configuration related to App Store (optional)
-        # Note: This action is performed during post-processing.
         submit_to_app_store: false
