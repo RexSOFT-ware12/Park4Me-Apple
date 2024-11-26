@@ -8,9 +8,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: AuthSign
+        bundle_identifier: com.park4me.pushNotification
       vars:
-        BUNDLE_ID: "io.codemagic.sample.iosnative"
+        BUNDLE_ID: "com.park4me.pushNotification"
         XCODE_WORKSPACE: "ParkMe.xcworkspace" # <-- Put the name of your Xcode workspace here
         XCODE_SCHEME: "ParkMe.xcodeproj" # <-- Put the name of your Xcode scheme here
         APP_STORE_APPLE_ID: 6738490049
