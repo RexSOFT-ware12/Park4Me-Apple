@@ -10,7 +10,7 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.park4me.pushNotification
       vars:
-        BUNDLE_ID: "com.park4me.pushNotification"
+        BUNDLE_ID: "Park4Me Notifications - com.park4me.pushNotification"
         XCODE_WORKSPACE: "ParkMe.xcworkspace"
         XCODE_SCHEME: "Park4Me" # Corrected scheme name
         APP_STORE_APPLE_ID: 6738696238
