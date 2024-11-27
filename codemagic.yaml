@@ -1,59 +1,60 @@
-workflows:
-  ios-native-workflow:
-    name: iOS Native
-    max_build_duration: 120
-    instance_type: mac_mini_m2
-    integrations:
-      app_store_connect: Park4Me Push Notification
-    environment:
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.park4me.pushNotification
-      vars:
-        BUNDLE_ID: "com.park4me.pushNotification"
-        XCODE_WORKSPACE: "ParkMe.xcworkspace"
-        XCODE_SCHEME: "Park4Me"
-        APP_STORE_APPLE_ID: 6738696238
-      xcode: latest
-      cocoapods: default
-    scripts:
-      - name: Install Correct CocoaPods Version
-        script: |
-          gem install cocoapods -v 1.16.2
-          pod install --repo-update --verbose
-      - name: Add SSH Key for Dependencies
-        script: |
-          echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-      - name: Clean and Install Pods
-        script: |
-          rm -rf ~/Library/Caches/CocoaPods
-          rm -rf Pods
-          pod deintegrate
-          pod install --verbose || pod install
-      - name: Build ipa for distribution
-        script: | 
-          xcode-project build-ipa \
-            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-            --scheme "$XCODE_SCHEME" \
-            --configuration "Release"
-    artifacts:
-      - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-    publishing:
-      email:
-        recipients:
-          - vincentpsmith88@gmail.com
-        notify:
-          success: true
-          failure: false
-      app_store_connect:
-        auth: integration
-        submit_to_testflight: true
-        beta_groups: 
-          - QA Testers
-          - Internal Team
-        submit_to_app_store: false
+ios-native-workflow:
+  name: iOS Native
+  max_build_duration: 120
+  instance_type: mac_mini_m2
+  integrations:
+    app_store_connect: Park4Me Push Notification
+  environment:
+    ios_signing:
+      distribution_type: app_store
+      bundle_identifier: com.park4me.pushNotification
+    vars:
+      BUNDLE_ID: "com.park4me.pushNotification"
+      XCODE_WORKSPACE: "ParkMe.xcworkspace"
+      XCODE_SCHEME: "Park4Me"
+      APP_STORE_APPLE_ID: 6738696238
+    xcode: "15"  # Ensure Xcode 15 is used
+    cocoapods: default
+  scripts:
+    - name: Install Correct CocoaPods Version
+      script: |
+        gem install cocoapods -v 1.16.2
+        pod install --repo-update --verbose
+    - name: Add SSH Key for Dependencies
+      script: |
+        echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    - name: Clean and Install Pods
+      script: |
+        rm -rf ~/Library/Caches/CocoaPods
+        rm -rf Pods
+        pod deintegrate
+        pod install --verbose || pod install
+    - name: Build ipa for distribution
+      script: | 
+        xcodebuild -workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+          -scheme "$XCODE_SCHEME" \
+          -configuration "Release" \
+          -sdk iphoneos \
+          -destination 'platform=iOS,OS=17.0,name=YourDevice' \
+          clean build
+  artifacts:
+    - build/ios/ipa/*.ipa
+    - /tmp/xcodebuild_logs/*.log
+    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+  publishing:
+    email:
+      recipients:
+        - vincentpsmith88@gmail.com
+      notify:
+        success: true
+        failure: false
+    app_store_connect:
+      auth: integration
+      submit_to_testflight: true
+      beta_groups: 
+        - QA Testers
+        - Internal Team
+      submit_to_app_store: false
