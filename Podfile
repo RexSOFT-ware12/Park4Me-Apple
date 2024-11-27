@@ -8,9 +8,9 @@ target 'Park4Me' do
   use_frameworks!
 
   # Use local paths for dependencies
-  pod 'GoNativeCore', :path => 'libs/GoNativeCore'
-  pod 'MedianIcons', :path => 'libs/MedianIcons'
-  pod 'SSZipArchive', :path => 'libs/SSZipArchive'
+  pod 'GoNativeCore', :path => 'Pods/GoNativeCore'
+  pod 'MedianIcons', :path => 'Pods/MedianIcons'
+  pod 'SSZipArchive', :path => 'Pods/SSZipArchive'
   
   # Remote pod
   pod 'OneSignal', '~> 3.12'
