@@ -22,12 +22,6 @@ workflows:
           echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-      - name: Clean and Install Pods
-        script: |
-          rm -rf ~/Library/Caches/CocoaPods
-          rm -rf Pods
-          pod deintegrate
-          pod install --verbose || pod install
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
