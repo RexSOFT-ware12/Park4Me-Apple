@@ -12,21 +12,26 @@ workflows:
       vars:
         BUNDLE_ID: "com.park4me.pushNotification"
         XCODE_WORKSPACE: "ParkMe.xcworkspace"
-        XCODE_SCHEME: "Park4Me" # Corrected scheme name
+        XCODE_SCHEME: "Park4Me"
         APP_STORE_APPLE_ID: 6738696238
       xcode: latest
       cocoapods: default
     scripts:
-      - name: Install CocoaPods dependencies
-        script: | 
-          pod install --verbose
-      - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles
-      - name: Increment build number
-        script: | 
-          cd $CM_BUILD_DIR
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
-          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+      - name: Install Correct CocoaPods Version
+        script: |
+          gem install cocoapods -v 1.16.2
+          pod install
+      - name: Add SSH Key for Dependencies
+        script: |
+          echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      - name: Clean and Install Pods
+        script: |
+          rm -rf ~/Library/Caches/CocoaPods
+          rm -rf Pods
+          pod deintegrate
+          pod install --verbose || pod install
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
@@ -53,7 +58,3 @@ workflows:
           - QA Testers
           - Internal Team
         submit_to_app_store: false
-    cache:
-      cache_paths:
-        - ~/.cocoapods
-        - ios/Pods
