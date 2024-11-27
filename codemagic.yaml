@@ -16,11 +16,7 @@ workflows:
         APP_STORE_APPLE_ID: 6738696238
       xcode: latest
       cocoapods: default
-    scripts:
-      - name: Install Correct CocoaPods Version
-        script: |
-          gem install cocoapods -v 1.16.2
-          pod install --repo-update --verbose
+    scripts: 
       - name: Add SSH Key for Dependencies
         script: |
           echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
