@@ -1,74 +1,59 @@
 workflows:
-  version: 2.0  # Correct format: version should be a string, not a float.
-  deploy_prod:
-    name: Deploy to Production
+  ios-native-workflow:
+    name: iOS Native
     max_build_duration: 120
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: Park4Me Push Notification
     environment:
-      # Define environment variables like SSH keys and known hosts
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.park4me.pushNotification
       vars:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
-        SSH_KEY_PATH: $HOME/private.key
-
-    # Define the steps in your deployment pipeline
-    jobs:
-      - name: Extract tag and deploy
-        type: script
+        BUNDLE_ID: "com.park4me.pushNotification"
+        XCODE_WORKSPACE: "ParkMe.xcworkspace"
+        XCODE_SCHEME: "Park4Me"
+        APP_STORE_APPLE_ID: 6738696238
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Install Correct CocoaPods Version
         script: |
-          # Extract the tag name from the Git reference
-          TAG_NAME=$(echo ${CIRCLE_SHA1#refs/tags/})
-          echo "Tag name: $TAG_NAME"
-          
-          # Set up SSH key for deployment
-          echo "$SSH_PRIVATE_KEY" > $SSH_KEY_PATH
-          chmod 600 $SSH_KEY_PATH
-          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-
-          # SSH Deployment to the server
-          echo "Deploying to build4.gonative.io"
-          cat > deploy.sh << 'END'
-            #!/bin/bash
-            set -e
-            cd ~/prod/build2
-            git checkout -- .
-            git fetch
-            echo "Checking out $TAG_NAME"
-            git checkout $TAG_NAME
-            npm install
-
-            echo "Stopping builder"
-            forever stopall
-
-            echo "Starting builder"
-            ./prod-forever.sh 2
-            
-            echo "Deployed prod"
-          END
-
-          scp -i $SSH_KEY_PATH deploy.sh builder@build4.gonative.io:deploy.sh
-          ssh -i $SSH_KEY_PATH builder@build4.gonative.io bash --login ./deploy.sh
-          
-          # Optional second deployment (uncomment if needed)
-          # echo "Deploying to build5.gonative.io"
-          # ssh -i $SSH_KEY_PATH -o "StrictHostKeyChecking=no" builder@build5.gonative.io << 'ENDSSH'
-          #   echo "Stopping builder"
-          #   forever stopall
-          #   cd ~/prod/build2
-          #   git checkout -- .
-          #   git fetch
-          #   echo "Checking out $TAG_NAME"
-          #   git checkout $TAG_NAME
-          #   npm install
-          #   echo "Starting builder"
-          #   ./prod-forever.sh 2
-          #   echo "Deployed prod"
-          # ENDSSH
+          gem install cocoapods -v 1.16.2
+          pod install --repo-update --verbose
+      - name: Add SSH Key for Dependencies
+        script: |
+          echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      - name: Clean and Install Pods
+        script: |
+          rm -rf ~/Library/Caches/CocoaPods
+          rm -rf Pods
+          pod deintegrate
+          pod install --verbose || pod install
+      - name: Build ipa for distribution
+        script: | 
+          xcode-project build-ipa \
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME" \
+            --configuration "Release"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     publishing:
-      # Use Codemagic's app store connect integration (for app deployments to TestFlight or App Store)
+      email:
+        recipients:
+          - vincentpsmith88@gmail.com
+        notify:
+          success: true
+          failure: false
       app_store_connect:
         auth: integration
         submit_to_testflight: true
-        beta_groups:
+        beta_groups: 
           - QA Testers
           - Internal Team
         submit_to_app_store: false
