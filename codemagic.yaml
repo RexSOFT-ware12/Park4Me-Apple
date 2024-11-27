@@ -8,9 +8,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.park4me.pushNotification
+        bundle_identifier: com.park4me.pushNotifications
       vars:
-        BUNDLE_ID: "Park4Me Notifications - com.park4me.pushNotification"
+        BUNDLE_ID: "com.park4me.pushNotifications"
         XCODE_WORKSPACE: "ParkMe.xcworkspace"
         XCODE_SCHEME: "Park4Me" # Corrected scheme name
         APP_STORE_APPLE_ID: 6738696238
