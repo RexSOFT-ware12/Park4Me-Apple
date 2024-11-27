@@ -1,11 +1,10 @@
 platform :ios, '13.0'
 
-# Source repositories for remote pods
 source 'https://cdn.cocoapods.org/'
 
 require_relative './plugins.rb'
 
-target 'default_app_target' do
+target 'Park4Me' do
   use_frameworks!
 
   # Use local paths for dependencies
