@@ -1,5 +1,5 @@
 workflows:
-  version: 2.0
+  version: "2.0"  # Correct format: version should be a string, not a float.
   deploy_prod:
     name: Deploy to Production
     max_build_duration: 120
