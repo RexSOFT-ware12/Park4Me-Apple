@@ -1,0 +1,438 @@
+{
+  "general": {
+    "screenOrientation": {
+      "iphone": "portrait",
+      "ipad": "portrait",
+      "androidPhone": "portrait",
+      "androidTablet": "portrait"
+    },
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "nativeBridgeUrls": [],
+    "languages": [],
+    "userAgentAdd": "median",
+    "enableWindowOpen": true,
+    "forceUserAgent": "",
+    "publicKey": "akoopb",
+    "deviceRegKey": "f08qhky22kptctr1mq7u054ncm",
+    "appName": "Park4Me",
+    "initialUrl": "https://park4me.org/sidebar/index.html",
+    "androidPackageName": "co.median.android.akoopb",
+    "iosBundleId": "co.median.ios.akoopb",
+    "keepScreenOn": null,
+    "iosUserAgentAdd": "park4me",
+    "iosForceUserAgent": "",
+    "androidUserAgentAdd": "park4me",
+    "androidForceUserAgent": "",
+    "androidSigningKey": "release",
+    "injectMedianJS": true,
+    "forceSessionCookieExpiry": 0,
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {},
+    "version": 13
+  },
+  "navigation": {
+    "tabNavigation": {
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ".*"
+        }
+      ],
+      "tabMenus": [
+        {
+          "items": [
+            {
+              "icon": "fas fa-car-rear",
+              "label": "Find Spot",
+              "url": "https://park4me.org/sidebar/index.html",
+              "subLinks": []
+            },
+            {
+              "label": "Street",
+              "icon": "fas fa-street-view",
+              "url": "https://park4me.org/homeowners.html",
+              "subLinks": []
+            },
+            {
+              "label": "Garage",
+              "icon": "fas fa-archway",
+              "url": "https://park4me.org/garageowners.html",
+              "subLinks": []
+            },
+            {
+              "icon": "fas fa-address-book",
+              "label": "Account",
+              "url": "https://park4me.org/earn/html/auth-login-basic.html",
+              "subLinks": []
+            }
+          ],
+          "id": "1"
+        }
+      ],
+      "active": true
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": false,
+          "items": [
+            {
+              "url": "https://park4me.org/index.html",
+              "label": "",
+              "subLinks": []
+            },
+            {
+              "url": "https://park4me.org/sidebar/index.html",
+              "label": "Find spot",
+              "subLinks": []
+            },
+            {
+              "url": "https://park4me.org/homeowners.html",
+              "label": "Home owners",
+              "subLinks": []
+            },
+            {
+              "url": "https://park4me.org/garageowners.html",
+              "label": "Garage owners",
+              "subLinks": []
+            },
+            {
+              "url": "https://park4me.org/earn/html/auth-login-basic.html",
+              "label": "Earn money💸",
+              "subLinks": []
+            },
+            {
+              "url": "https://park4me.org/#",
+              "label": "",
+              "subLinks": []
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "mode": "external",
+          "label": "Non-web links",
+          "pagesToTrigger": "custom",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Facebook",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Twitter/X",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([\\-\\w]+\\.)*(twitter|x)\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Instagram",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps",
+          "pagesToTrigger": "custom",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "Google Maps Search",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "LinkedIn",
+          "pagesToTrigger": "custom",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "mode": "internal",
+          "label": "Microsoft Login",
+          "pagesToTrigger": "custom",
+          "regex": "https?://login\\.microsoftonline\\.com.*"
+        },
+        {
+          "mode": "internal",
+          "label": "All pages on my domain",
+          "pagesToTrigger": "domain",
+          "regex": "https?:\\/\\/([-\\w]+\\.)*park4me.org(\\/.*)?$"
+        },
+        {
+          "mode": "appbrowser",
+          "label": "All Other Links",
+          "pagesToTrigger": "all",
+          "regex": ".*"
+        }
+      ],
+      "active": true
+    },
+    "androidPullToRefresh": false,
+    "iosPullToRefresh": false,
+    "navigationTitles": {
+      "titles": [],
+      "active": true
+    },
+    "ignorePageFinishedRegexes": [],
+    "actionConfig": {
+      "actions": [],
+      "actionSelection": [],
+      "active": true
+    },
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": {
+      "domains": [],
+      "enableAndroidApplinks": false
+    },
+    "navigationLevels": {
+      "levels": [],
+      "active": true
+    },
+    "toolbarNavigation": {
+      "enabled": false,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": false,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": false,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ]
+    },
+    "redirects": [],
+    "iosShowOfflinePage": true,
+    "iosConnectionOfflineTime": 10,
+    "androidShowOfflinePage": true,
+    "androidConnectionOfflineTime": 10,
+    "iosSettings": {},
+    "swipeGestures": null,
+    "maxWindows": {
+      "enabled": false,
+      "numWindows": 5,
+      "autoClose": false
+    }
+  },
+  "styling": {
+    "splashScreen": {
+      "ios": {
+        "animationLoop": "once",
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#fcfcfc",
+        "backgroundImage": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817206_1u6k4u8ppg19p_FFFFFF_1_2x2.png",
+        "backgroundImageDark": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817272_u7zbv0yvhr7am_fcfcfc_1_2x2.png",
+        "animated": false,
+        "centerImage": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+        "centerImageDark": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null
+      },
+      "android": {
+        "showSplash": true,
+        "animationLoop": "once",
+        "backgroundColor": "#FFFFFF",
+        "backgroundColorDark": "#fcfcfc",
+        "animated": false,
+        "launchImages": {
+          "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817540_nu9ah6mmrg6d0_180x180.png",
+          "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817556_83g5eq8fmyc02_270x270.png",
+          "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817573_ubuhecqk5ya10_360x360.png",
+          "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817583_tmbyn5bh1f45g_540x540.png",
+          "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817633_233xt15ev6xjw_720x720.png"
+        },
+        "launchImagesDark": {
+          "mdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817676_guym4xtqtpbjp_180x180.png",
+          "hdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817721_5c8tgju10f2tg_270x270.png",
+          "xhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817747_ukfuf8qffr0gy_360x360.png",
+          "xxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817770_cwy8cpthb9djw_540x540.png",
+          "xxxhdpi": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/1729448817806_myncaxhp76zva_720x720.png"
+        },
+        "animation": null,
+        "animationDark": null,
+        "animationFrame": null,
+        "animationFrameDark": null
+      }
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "disableAnimations": true,
+    "hideWebviewAlpha": 0.5,
+    "iosDarkMode": "auto",
+    "iosTitleColor": "#0E0D08",
+    "iosTitleColorDark": "#ffffff",
+    "iosTintColor": "#0E0D08",
+    "iosTintColorDark": "#ffffff",
+    "iosSidebarTextColor": "#0E0D08",
+    "iosSidebarTextColorDark": "#ffffff",
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "iosEnableBlurInStatusBar": false,
+    "iosSidebarBackgroundColor": "#f8f8f8",
+    "iosSidebarBackgroundColorDark": "#202020",
+    "iosNavigationBarTintColor": "#f8f8f8",
+    "iosNavigationBarTintColorDark": "#202020",
+    "iosTabBarTintColor": "#f8f8f7",
+    "iosTabBarTintColorDark": "#f8f8f8",
+    "icon": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+    "iosHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+    "showActionBar": false,
+    "showNavigationBar": false,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "default",
+    "androidTheme": "auto",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#1A100B",
+    "androidActionBarBackgroundColor": "#FFFFFF",
+    "androidActionBarForegroundColor": "#1A100B",
+    "androidPullToRefreshColor": "#1A100B",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarHighlightColor": "#1A100B",
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarIndicatorColor": "#43ea05",
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "androidAccentColorDark": "#80cbc4",
+    "androidBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "androidSystemNavBarColor": "#FFFFFF",
+    "androidSystemNavBarColorDark": "#000000",
+    "androidWebviewTextZoom": null,
+    "iosIcon": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+    "customIcons": {},
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "androidIcon": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+    "iosActivityIndicatorColor": "#43ea05",
+    "iosActivityIndicatorColorDark": "#808080",
+    "androidActivityIndicatorColor": "#43ea05",
+    "androidActivityIndicatorColorDark": "#808080",
+    "forceViewportWidth": null,
+    "pinchToZoom": null,
+    "iosDynamicType": true,
+    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "iosHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app_icon_ios_1729448643041.png",
+    "androidNotificationIcon": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/app logo_1731939082791.png"
+  },
+  "permissions": {
+    "usesGeolocation": true,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTCamera": false,
+    "enableWebRTCMicrophone": false,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "iosMicrophoneUsageDescription": "",
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignal": {
+      "active": true,
+      "applicationId": "fa6be4a9-5244-4133-aed1-998f8a7edd39",
+      "clearNotificationsOnLaunch": true,
+      "custom_sound_1": "https://s3.amazonaws.com/gonativeio/app_files/akoopb/car-alarm-in-parking-structure-93400_1731940167639.mpeg",
+      "iosPluginName": "OneSignalPlugin"
+    }
+  },
+  "contextMenu": {
+    "linkActions": [
+      "copyLink",
+      "openExternal"
+    ],
+    "enabled": false
+  },
+  "allowZoom": null,
+  "security": {
+    "network": {
+      "allowInsecure": null
+    }
+  }
+}

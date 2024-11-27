@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/ParkMe.app</string>
+		<key>Architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>CFBundleIdentifier</key>
+		<string>com.park4me.pushNotification</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>2</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: PEH ATTA JOSEPH (96286A6LV7)</string>
+		<key>Team</key>
+		<string>8ZRM7Z2SR2</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2024-11-27T11:50:37Z</date>
+	<key>Distributions</key>
+	<array>
+		<dict>
+			<key>certificateSHA1</key>
+			<string>9B5549C6544901D3C5ED9D56864CDC2FC511F800</string>
+			<key>destination</key>
+			<string>upload</string>
+			<key>identifier</key>
+			<string>9B6DA25C-735E-41D4-9056-ED0731AFDFD5</string>
+			<key>preparationEvent</key>
+			<dict>
+				<key>date</key>
+				<string>2024-11-27T11:50:44Z</string>
+				<key>errors</key>
+				<array/>
+				<key>infoMessages</key>
+				<array/>
+				<key>shortTitle</key>
+				<string>Prepared</string>
+				<key>state</key>
+				<string>success</string>
+				<key>title</key>
+				<string>Prepared archive for uploading</string>
+				<key>warnings</key>
+				<array/>
+			</dict>
+			<key>task</key>
+			<string>distribute</string>
+			<key>teamID</key>
+			<string>8ZRM7Z2SR2</string>
+			<key>uploadDestination</key>
+			<string>App Store</string>
+			<key>uploadEvent</key>
+			<dict>
+				<key>date</key>
+				<string>2024-11-27T11:52:20Z</string>
+				<key>errors</key>
+				<array>
+					<dict>
+						<key>code</key>
+						<integer>90725</integer>
+						<key>description</key>
+						<string>Asset validation failed</string>
+						<key>domain</key>
+						<string>ContentDelivery</string>
+						<key>recoverySuggestion</key>
+						<string>SDK version issue. This app was built with the iOS 16.0 SDK. All iOS and iPadOS apps must be built with the iOS 17 SDK or later, included in Xcode 15 or later, in order to be uploaded to App Store Connect or submitted for distribution. (ID: ae5b9e8e-0e4f-4183-828a-58bbb7203190)</string>
+					</dict>
+				</array>
+				<key>infoMessages</key>
+				<array/>
+				<key>shortTitle</key>
+				<string>Upload failed</string>
+				<key>state</key>
+				<string>errors</string>
+				<key>title</key>
+				<string>Upload failed</string>
+				<key>warnings</key>
+				<array/>
+			</dict>
+		</dict>
+	</array>
+	<key>Name</key>
+	<string>ParkMe</string>
+	<key>SchemeName</key>
+	<string>ParkMe</string>
+</dict>
+</plist>
