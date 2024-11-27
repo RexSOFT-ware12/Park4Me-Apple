@@ -14,29 +14,30 @@ workflows:
         XCODE_WORKSPACE: "ParkMe.xcworkspace"
         XCODE_SCHEME: "Park4Me"
         APP_STORE_APPLE_ID: 6738696238
-        EXPORT_OPTIONS_PLIST_PATH: "$CM_BUILD_DIR/ExportOptions.plist"  # Ensure correct path to ExportOptions.plist
+        EXPORT_OPTIONS_PLIST_PATH: "$CM_BUILD_DIR/ExportOptions.plist"  # Correct path to ExportOptions.plist
       xcode: latest
       cocoapods: default
-    scripts: 
+    scripts:
       - name: Add SSH Key for Dependencies
         script: |
           echo "${PRIVATE_SSH_KEY}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-
       - name: Build ipa for distribution
-        script: | 
-          # Use xcodebuild for building the .ipa
+        script: |
+          # Step 1: Archive the project
           xcodebuild -workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
             -scheme "$XCODE_SCHEME" \
             -configuration "Release" \
             -sdk iphoneos \
-            -destination 'platform=iOS,OS=17.0,name=12 pro' \
-            clean build \
-            -exportArchive \
             -archivePath "$CM_BUILD_DIR/$XCODE_SCHEME.xcarchive" \
-            -exportOptionsPlist "$EXPORT_OPTIONS_PLIST_PATH"  # Ensure the ExportOptions.plist is correctly referenced
-          
+            archive
+
+          # Step 2: Export the ipa from the archive
+          xcodebuild -exportArchive \
+            -archivePath "$CM_BUILD_DIR/$XCODE_SCHEME.xcarchive" \
+            -exportOptionsPlist "$EXPORT_OPTIONS_PLIST_PATH" \
+            -exportPath "$CM_BUILD_DIR/build/ios/ipa"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
@@ -52,7 +53,7 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_testflight: true
-        beta_groups: 
+        beta_groups:
           - QA Testers
           - Internal Team
         submit_to_app_store: false
